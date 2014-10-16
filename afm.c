@@ -2,13 +2,19 @@
 // AFM - Software gestão para Associação de Futebol do Montenegro
 
 #include <stdio.h>
-#include <math.h>
-// #include "menu_1.c"
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include "menus.h"
 // #include "menu_2.c"
 // #include "menu_3.c"
 
 int main ()
 {
+
+
 	char op; // variável de opção para o menu
 
 	//system("chcp 1252>null"); //CODEPAGE PT
@@ -27,7 +33,7 @@ int main ()
 	system("clear"); //system("cls");
 	switch (op) {
 		case '1':
-				printf("| 1.Inserir/Editar   |\n"); // chama função menu Inserir/Editar
+				menu_1();//printf("| 1.Inserir/Editar   |\n"); // chama função menu Inserir/Editar
 				break;
 		case '2':
 				printf("| 2.Listar/Pesquisar |\n"); // chama função menu Listar/Pesquisar
