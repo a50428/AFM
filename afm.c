@@ -1,5 +1,5 @@
-// Projeto Modulo Tem·tico LTIC
-// AFM - Software gest„o para AssociaÁ„o de Futebol do Montenegro
+// Projeto Modulo Tem√°tico LTIC
+// AFM - Software gest√£o para Associa√ß√£o de Futebol do Montenegro
 
 #include <stdio.h>
 #include <math.h>
@@ -9,12 +9,12 @@
 
 int main ()
 {
-	char op; // vari·vel de opÁ„o para o menu
+	char op; // vari√°vel de op√ß√£o para o menu
 
 	//system("chcp 1252>null"); //CODEPAGE PT
 
 	// MENU PRINCIPAL
-	printf("+     Gest„o AFM     +\n\n");
+	printf("+     Gest√£o AFM     +\n\n");
 	printf("| 1.Inserir/Editar   |\n");
 	printf("| 2.Listar/Pesquisar |\n");
 	printf("| 3.Estatisticas     |\n");
@@ -22,21 +22,21 @@ int main ()
 	printf("| 0.Sair             |\n");
 	printf("\n");
 
-	op=getchar();
+	op=getchar(); // ou getch(); em windows
 
 	system("clear"); //system("cls");
 	switch (op) {
 		case '1':
-				printf("| 1.Inserir/Editar   |\n"); // chama funÁ„o menu Inserir/Editar
+				printf("| 1.Inserir/Editar   |\n"); // chama fun√ß√£o menu Inserir/Editar
 				break;
 		case '2':
-				printf("| 2.Listar/Pesquisar |\n"); // chama funÁ„o menu Listar/Pesquisar
+				printf("| 2.Listar/Pesquisar |\n"); // chama fun√ß√£o menu Listar/Pesquisar
 				break;
 		case '3':
-				printf("| 3.Estatisticas     |\n"); // chama funÁ„o menu Estatisticas
+				printf("| 3.Estatisticas     |\n"); // chama fun√ß√£o menu Estatisticas
 				break;
 		case '4':
-				printf("| 4.Carregar/Salvar  |\n"); // chama funÁ„o menu Carregar/Salvar
+				printf("| 4.Carregar/Salvar  |\n"); // chama fun√ß√£o menu Carregar/Salvar
 				break;
 		case '0':
 				break; // sai do programa
