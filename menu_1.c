@@ -3,76 +3,69 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
-#include <stdlib.h>
+
+
+/*
+#define J 100
+
+typedef struct{
+
+    int num_cc[9];
+    char nome[50];
+    char morada[50];
+    char telefone[9];
+    int idade;
+    int ano_entrada[4];
+    char pos[20];
+
+} jogador;
+
+typedef jogador listajog[J];
+*/
+
+// Cabeçalho da função menu_1
+int menu_1(void);
 
 // Outras funções
 
-int inserir ()
+int inserir_jog(void)
 {
-    typedef struct
-            {
-                char num_cc[9];
-                char nome[30];
-                char morada[50];
-                char telefone[9];
-                char idade[2];
-                char ano_entrada[4];
-                char pos[20];
-            }dados;
-
-    dados jogador;
-    int op;
-    FILE *jogadores;
-
-
-    jogadores=fopen("jogadores.txt", "a");
-
+    char op;
+    int i=0;
+    listajog jog;
     do
-        {
-            system("clear");
-            printf("\nInserir Novo Jogador\n");
-            printf("\nCC: ");
-            fflush(stdin);
-            gets(jogador.num_cc);
-            printf("\nNome: ");
-            fflush(stdin);
-            gets(jogador.nome);
-            printf("\nMorada: ");
-            fflush(stdin);
-            gets(jogador.morada);
-            printf("\nTelefone: ");
-            fflush(stdin);
-            gets(jogador.telefone);
-            printf("\nIdade: ");
-            fflush(stdin);
-            gets(jogador.idade);
-            printf("\nAno de Entrada: ");
-            fflush(stdin);
-            gets(jogador.ano_entrada);
-            printf("\nPosição: ");
-            fflush(stdin);
-            gets(jogador.pos);
+    {
+       system("clear");
+       printf("\nInserir Novo Jogador\n");
+       printf("\nCC: ");
+       scanf("%d",&jog[i].num_cc);
+       printf("\nNome: ");
+       scanf("%s",&jog[i].nome);
+       printf("\nMorada: ");
+       scanf("%s",&jog[i].morada);
+       printf("\nTelefone: ");
+       scanf("%s",&jog[i].telefone);
+       printf("\nIdade: ");
+       scanf("%d",&jog[i].idade);
+       pintf("\nAno de Entrada: ");
+       scanf("%d",&jog[i].ano_entrada);
+       printf("\nPosição: ");
+       scanf("%s",&jog[i].pos);
 
-            //Inserir os dados no TXT
+       i++;
 
-            fprintf(jogadores, "\n%s %s %s %s %s %s %s", jogador.num_cc, jogador.nome, jogador.morada, jogador.telefone, jogador.idade, jogador.ano_entrada, jogador.pos);
-            fclose(jogadores);
-            printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
-            scanf("%d", &op);
-     	}while (op == 1);
+       printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
+       scanf("%d", &op);
+   	}while (op == 1);
 
 return 0;
-
-
-
 
 }
 
 
 // Função menu_1
-int menu_1()
+int menu_1(void)
 {
 
 
@@ -92,10 +85,10 @@ int menu_1()
 
 	op=getchar(); // ou getch(); em windows
 
-	system("clear"); //system("cls");
+	system("clear"); // ou system("cls"); em windows
 	switch (op) {
 		case '1':
-				inserir(); // chama função menu Inserir
+				inserir_jog(); // chama função menu inserir jogador
 				break;
 		case '2':
 				printf("| 2.Listar/Pesquisar |\n"); // chama função menu Listar/Pesquisar
@@ -110,7 +103,7 @@ int menu_1()
 				break; // sai do programa
 	}
 
-	getchar(); //system("pause");
+	getchar(); // ou system("pause"); em windows
 
 
 return 0;
