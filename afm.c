@@ -3,21 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
-#include <stdlib.h>
 
-#include "menu_1.c"
-// #include "menu_2.c"
-// #include "menu_3.c"
-// #include "menu_4.c"
 
 // Cabeçalhos das funções de "menu_1.c"
 
-int menu_1(void);
-
-
-int menu_4(void);
 
 // Definição das estruturas de dados
 
@@ -25,18 +15,24 @@ int menu_4(void);
 
 typedef struct{
 
-    int num_cc[9];
+    int num_cc;
     char nome[50];
     char morada[50];
     char telefone[9];
     int idade;
-    int ano_entrada[4];
+    int ano_entrada;
     char pos[20];
 
 } jogador;
 
 typedef jogador listajog[J];
 
+listajog jog;
+
+#include "menu_1.c"
+#include "menu_2.c"
+// #include "menu_3.c"
+// #include "menu_4.c"
 
 // Função salva_jogador
 void salva_jogador(listajog lj){
@@ -84,51 +80,60 @@ int menu_4(void)
     printf("%s\t %d\n", lj2[0].nome, lj2[0].idade);
     return 0;
 }
-// MAIN
-int main ()
+
+// MENU PRINCIPAL
+int menu_principal()
 {
 
 
-	char op; // variável de opção para o menu
+	int op = '\n'; // variável de opção para o menu
 
 	//system("chcp 1252>null"); //CODEPAGE PT
 
 	// MENU PRINCIPAL
-	printf("+     Gestão AFM     +\n\n");
-	printf("| 1.Inserir/Editar   |\n");
-	printf("| 2.Listar/Pesquisar |\n");
-	printf("| 3.Estatisticas     |\n");
-	printf("| 4.Carregar/Salvar  |\n");
-	printf("| 0.Sair             |\n");
-	printf("\n");
+	do{
+        printf("+     Gestão AFM     +\n\n");
+        printf("| 1.Inserir/Editar   |\n");
+        printf("| 2.Listar/Pesquisar |\n");
+        printf("| 3.Estatisticas     |\n");
+        printf("| 4.Carregar/Salvar  |\n");
+        printf("| 0.Sair             |\n");
+        printf("\n");
 
-	op=getchar(); // ou getch(); em windows
+        scanf("%d", &op); //op=getchar(); // ou getch(); em windows
 
-	system("clear"); // ou system("cls"); em windows
-	switch (op) {
-		case '1':
-				printf("| 1.Inserir/Editar   |\n");
-				menu_1(); // chama função menu Inserir/Editar
-				break;
-		case '2':
-				printf("| 2.Listar/Pesquisar |\n"); // chama função menu Listar/Pesquisar
-				break;
-		case '3':
-				printf("| 3.Estatisticas     |\n"); // chama função menu Estatisticas
-				break;
-		case '4':
-				printf("| 4.Carregar/Salvar  |\n"); // chama função menu Carregar/Salvar
-				menu_4();
-				break;
-		case '0':
-				break; // sai do programa
-	}
+        system("clear"); // ou system("cls"); em windows
+        switch (op) {
+            case 1:
+                    menu_1(); // chama função menu Inserir/Editar
+                    break;
+            case 2:
+                    menu_2(); // chama função menu Listar/Pesquisar
+                    break;
+            case 3:
+                    printf("| 3.Estatisticas     |\n"); // chama função menu Estatisticas
+                    break;
+            case 4:
+                    printf("| 4.Carregar/Salvar  |\n"); // chama função menu Carregar/Salvar
+                    menu_4();
+                    break;
+            case 0:
+            return;
+                    //break; // sai do programa
+        }
 
-	getchar(); //system("pause");
+
+	} while (1);//getchar(); //system("pause");
 
 
 }
 
+int main()
+{
+
+    menu_principal();
+
+}
 
 /* CODIGO DO PROFESSOR
 
