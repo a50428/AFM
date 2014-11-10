@@ -143,9 +143,9 @@ return 0;
 
 }
 
-main()
+/*main()
 {
 
 menu_2();
 
-}
+}*/

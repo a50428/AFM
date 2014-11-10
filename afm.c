@@ -11,7 +11,7 @@
 
 // Definição das estruturas de dados
 
-#define J 100
+#define J 101
 
 typedef struct{
 
@@ -22,6 +22,7 @@ typedef struct{
     int idade;
     int ano_entrada;
     char pos[20];
+    int ativo;
 
 } jogador;
 
@@ -31,36 +32,52 @@ listajog jog;
 
 #include "menu_1.c"
 #include "menu_2.c"
-// #include "menu_3.c"
-// #include "menu_4.c"
+//#include "menu_3.c"
+//#include "menu_4.c"
+
+// ################################################
+
+int init(void) // função para inicializar a estrutura jogadores
+{
+    int i;
+
+    for (i=0;i<J;i++)
+        {
+             jog[i].num_cc=0;
+
+        }
+    return 0;
+}
 
 // Função salva_jogador
-void salva_jogador(listajog lj){
+void salva_jogadores(listajog lj){
 int i;
-FILE *f = fopen("jogador.bin", "wb");
+FILE *f = fopen("jogadores.bin", "wb");
 
     if (f == NULL)
     {
         fprintf(stderr, "salva_jogador:: Nao e possivel abrir para escrita.\n");
         exit(1);
     }
-    fwrite(lj, sizeof(lj[i]), J, f );
+    fwrite(lj, sizeof(jogador), J, f );
     fclose(f);
+
 }
 
 
 
-void carrega_jogador(listajog *lj){
+void carrega_jogadores(listajog *lj){
 int i;
-FILE *f = fopen("jogador.bin", "rb");
+FILE *f = fopen("jogadores.bin", "rb");
 
     if (f == NULL)
     {
         fprintf(stderr, "carrega_jogador:: Nao e possivel abrir para leitura.\n");
         exit(1);
     }
-    fread(lj, sizeof(lj[i]), J, f );
+    fread(lj, sizeof(jogador), J, f );
     fclose(f);
+
 }
 
 
@@ -68,16 +85,36 @@ FILE *f = fopen("jogador.bin", "rb");
 
 int menu_4(void)
 {
+    int op;
+        system("clear");
 
-    listajog lj1, lj2;
+    	do{
 
-    lj1[0].idade = 10;
-    strcpy(lj1[0].nome, "Cristiano Ronaldo");
-    salva_jogador(lj1);
+        printf("+       Menu 4       +\n\n");
+        printf("| 1.Salvar dados     |\n");
+        printf("| 2.Carregar dados   |\n");
+        printf("| 0.Sair             |\n");
+        printf("\n");
+
+        scanf("%d", &op); //op=getchar(); // ou getch(); em windows
+
+        system("clear"); // ou system("cls"); em windows
+        switch (op) {
+            case 1:
+                    salva_jogadores(jog); //menu_1(); // chama função menu Inserir/Editar
+                    printf("\n\tFicheiro Guardado com sucesso!");
+                    break;
+            case 2:
+                    carrega_jogadores(&jog);//menu_2(); // chama função menu Listar/Pesquisar
+                    printf("\n\tFicheiro Carregado com sucesso!");
+                    break;
+            case 0:
+                    break; //break; // sai do programa
+        }
 
 
-    carrega_jogador(&lj2);
-    printf("%s\t %d\n", lj2[0].nome, lj2[0].idade);
+	} while (op!=0);//getchar(); //system("pause");
+
     return 0;
 }
 
@@ -88,10 +125,12 @@ int menu_principal()
 
 	int op = '\n'; // variável de opção para o menu
 
+	init(); //inicializa estrutura a zero
 	//system("chcp 1252>null"); //CODEPAGE PT
 
 	// MENU PRINCIPAL
 	do{
+        system("clear");
         printf("+     Gestão AFM     +\n\n");
         printf("| 1.Inserir/Editar   |\n");
         printf("| 2.Listar/Pesquisar |\n");

@@ -5,32 +5,38 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
-/*#define J 100
-
-typedef struct{
-
-    int num_cc[9];
-    char nome[50];
-    char morada[50];
-    char telefone[9];
-    int idade;
-    int ano_entrada[4];
-    char pos[20];
-
-} jogador;
-
-typedef jogador listajog[J];
-*/
-
-
 // Outras funções
 
-int inserir_jog(void)
+// ############################################################
+
+int listar_jog(void) // função que lista jogadores existentes
 {
     int op;
-    int i=0;
+    int i;
+
+    system("clear");
+    printf("|  ID  | NOME | IDADE | POSICAO |\n");
+    printf("+-------------------------------+\n");
+    for (i=1;i<J;i++)
+        {
+            if (jog[i].num_cc==0) break;
+            printf("\n| %d | %s | %d | %s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
+        }
+
+    printf("\n+-------------------------------+\n\n");
+    //printf("\n\nQualquer tecla pra voltar para voltar...\n");
+    getchar();
+    //getchar();
+   	//menu_1();
+
+}
+
+// ####################################################
+
+int inserir_jog(void) // função que insere novo jogador
+{
+    int op;
+    int i=1;
 
     do
     {
@@ -39,18 +45,18 @@ int inserir_jog(void)
        printf("CC: ");
        scanf("%d",&jog[i].num_cc);
        printf("Nome: ");
-       scanf("%s",&jog[i].nome);
+       scanf(" %99[^\n]",&jog[i].nome);
        printf("Morada: ");
-       scanf("%s",&jog[i].morada);
+       scanf(" %99[^\n]",&jog[i].morada);
        printf("Telefone: ");
-       scanf("%s",&jog[i].telefone);
+       scanf(" %99[^\n]",&jog[i].telefone);
        printf("Idade: ");
        scanf("%d",&jog[i].idade);
        printf("Ano de Entrada: ");
        scanf("%d",&jog[i].ano_entrada);
        printf("Posição: ");
-       scanf("%s",&jog[i].pos);
-
+       scanf(" %99[^\n]",&jog[i].pos);
+       jog[i].ativo=1;
        i++;
 
        printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
@@ -60,6 +66,42 @@ int inserir_jog(void)
     menu_1();
 
 }
+
+// ############################################################
+
+int editar_jog(void) // função que edita dados dos jogadores existentes
+{
+   int op,id;
+   listar_jog(); // lista jogadores
+   do {
+        printf("\n\nQual o ID do jogador a editar? [0] Sair: ");
+        scanf("%d", &id);
+        if (id==0) break;
+        printf("\n\nEditar Jogador [%d]\n", id);
+        printf("CC: ");
+        scanf("%d",&jog[id].num_cc);
+        printf("Nome: ");
+        scanf(" %99[^\n]",&jog[id].nome);
+        printf("Morada: ");
+        scanf(" %99[^\n]",&jog[id].morada);
+        printf("Telefone: ");
+        scanf(" %99[^\n]",&jog[id].telefone);
+        printf("Idade: ");
+        scanf("%d",&jog[id].idade);
+        printf("Ano de Entrada: ");
+        scanf("%d",&jog[id].ano_entrada);
+        printf("Posição: ");
+        scanf(" %99[^\n]",&jog[id].pos);
+
+        printf("\nDeseja editar outro Jogador? [1] SIM / [2] NÃO\n");
+        scanf("%d", &op);
+
+   	}while (op == 1);
+
+    menu_1();
+
+}
+
 
 
 // Função menu_1
@@ -90,7 +132,8 @@ int menu_1(void)
 				inserir_jog(); // chama função menu inserir jogador
 				break;
 		case '2':
-				printf("| 2.Listar/Pesquisar |\n"); // chama função menu Listar/Pesquisar
+				//listar_jog(); // chama função menu Listar jogadorees
+				editar_jog(); // chama a função que edita jogadores
 				break;
 		case '3':
 				printf("| 3.Estatisticas     |\n"); // chama função menu Estatisticas
