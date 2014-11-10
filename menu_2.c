@@ -5,6 +5,41 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct{
+
+    int num_cc;
+    char nome[50];
+    char morada[50];
+    char telefone[9];
+    int idade;
+    int ano_entrada;
+    char pos[20];
+
+} Jogador;
+
+typedef Jogador listajog[100];
+
+// Função salva_jogador
+void salva_jogador(listajog lj){
+//int i;
+
+//do{
+
+
+
+FILE *f = fopen("jogador.bin", "wb");
+
+    if (f == NULL)
+    {
+        fprintf(stderr, "salva_jogador:: Nao e possivel abrir para escrita.\n");
+        exit(1);
+    }
+    else
+    fwrite(lj, sizeof(lj[0]), 100 , f );
+    fclose(f);
+}
+
+//} while(opcao==1);
 // Função listar resultados por equipa
 
 int result_equip(void)
@@ -144,8 +179,26 @@ return 0;
 }
 
 main()
-{
 
-menu_2();
+listajog lj[];
+
+printf("\nNome do jogador?\n");
+scanf("%s" , lj[0].nome);
+printf("\nMorada do jogador?\n");
+scanf("%s" , lj[0].morada);
+printf("\nNumero do CC?\n");
+scanf("%d" , lj[0].num_cc);
+printf("\nTelefone/telemovel?\n");
+scanf("%s" , lj[0].telefone);
+printf("\nIdade do jogador?\n");
+scanf("%d" , lj[0].idade);
+printf("\nAno de entrada\n");
+scanf("%d" , lj[0].ano_entrada);
+printf("\nPosicao do jogador?\n");
+scanf("%s" , lj[0].pos);
+
+salva_jogador(lj);
+
+//menu_2();
 
 }
