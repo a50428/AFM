@@ -16,7 +16,7 @@ int listar_jog(void) // função que lista jogadores existentes
 
     system("clear");
     printf("|  ID  | NOME | IDADE | POSICAO |\n");
-    printf("+-------------------------------+\n");
+    printf("+-------------------------------+");
     for (i=1;i<J;i++)
         {
             if (jog[i].num_cc==0) break;
@@ -36,12 +36,17 @@ int listar_jog(void) // função que lista jogadores existentes
 int inserir_jog(void) // função que insere novo jogador
 {
     int op;
-    int i=1;
+    int i=0;
+
+    do
+    {
+        i++; // vai para o ultimo registo
+    } while (jog[i].num_cc>0);
 
     do
     {
        system("clear");
-       printf("Inserir Novo Jogador\n");
+       printf("Inserir Novo Jogador ID [%d]\n\n",i );
        printf("CC: ");
        scanf("%d",&jog[i].num_cc);
        printf("Nome: ");
@@ -61,7 +66,7 @@ int inserir_jog(void) // função que insere novo jogador
 
        printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
-   	}while (op == 1);
+   	}while (op == 1 && op<J);
 
     menu_1();
 
@@ -101,7 +106,6 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
     menu_1();
 
 }
-
 
 
 // Função menu_1

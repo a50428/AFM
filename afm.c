@@ -6,9 +6,6 @@
 #include <string.h>
 
 
-// Cabeçalhos das funções de "menu_1.c"
-
-
 // Definição das estruturas de dados
 
 #define J 101
@@ -34,6 +31,16 @@ listajog jog;
 #include "menu_2.c"
 //#include "menu_3.c"
 //#include "menu_4.c"
+
+// #################################################################
+
+/*void gotoxy(int x, int y) // função gotoxy()
+{
+  COORD coord;
+  coord.X = x;
+  coord.Y = y;
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}*/
 
 // ################################################
 
@@ -61,7 +68,8 @@ FILE *f = fopen("jogadores.bin", "wb");
     }
     fwrite(lj, sizeof(jogador), J, f );
     fclose(f);
-
+    printf("\n\tFicheiro salvo com sucesso!\n");
+    getchar();
 }
 
 
@@ -77,7 +85,8 @@ FILE *f = fopen("jogadores.bin", "rb");
     }
     fread(lj, sizeof(jogador), J, f );
     fclose(f);
-
+    printf("\n\tFicheiro carregado com sucesso!\n");
+    getchar();
 }
 
 
@@ -86,10 +95,11 @@ FILE *f = fopen("jogadores.bin", "rb");
 int menu_4(void)
 {
     int op;
-        system("clear");
+
 
     	do{
-
+        system("clear");
+        printf("\n");
         printf("+       Menu 4       +\n\n");
         printf("| 1.Salvar dados     |\n");
         printf("| 2.Carregar dados   |\n");
@@ -98,15 +108,15 @@ int menu_4(void)
 
         scanf("%d", &op); //op=getchar(); // ou getch(); em windows
 
-        system("clear"); // ou system("cls"); em windows
+         // ou system("cls"); em windows
         switch (op) {
             case 1:
                     salva_jogadores(jog); //menu_1(); // chama função menu Inserir/Editar
-                    printf("\n\tFicheiro Guardado com sucesso!");
+                    getchar();
                     break;
             case 2:
                     carrega_jogadores(&jog);//menu_2(); // chama função menu Listar/Pesquisar
-                    printf("\n\tFicheiro Carregado com sucesso!");
+                    getchar();
                     break;
             case 0:
                     break; //break; // sai do programa
@@ -153,7 +163,7 @@ int menu_principal()
                     printf("| 3.Estatisticas     |\n"); // chama função menu Estatisticas
                     break;
             case 4:
-                    printf("| 4.Carregar/Salvar  |\n"); // chama função menu Carregar/Salvar
+                    system ("clear"); // chama função menu Carregar/Salvar
                     menu_4();
                     break;
             case 0:
