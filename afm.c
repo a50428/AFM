@@ -22,6 +22,8 @@ typedef struct{
     int ano_entrada;
     char pos[50];
     int ativo;
+    int golos; // guarda o nº golos do jogador
+    int eq; // guarda o inteiro do id da equipa à qual pertence.
 
 } jogador; // estrutura para variável do tipo jogador
 
@@ -34,6 +36,9 @@ typedef struct{
     int id;
     char nome[80];
     int lista[26]; // array inteiro que guarda o [id] de 25 jogadores (1-25)
+    int vitorias;
+    int empates;
+    int derrotas;
     int ativo;
 
 } equipa; // estrutura para variável do tipo equipa
@@ -45,13 +50,13 @@ listaequip equip; // variável do tipo array
 typedef struct{
 
     int id;
-    char equipa_a[80];
-    char equipa_b[80];
+    int equipa_a; // guarda o ID da equipa A
+    int equipa_b; // guarda o ID da equipa B
     int golos_a;
     int golos_b;
     int marcadores[21]; // array inteiro que guarda o [id] de 20 marcadores (1-20)
     char data[10];
-    char local[80];
+    char local[50];
     int ativo;
 
 } resultado; // estrutura para variável do tipo resultado
@@ -78,48 +83,78 @@ listaresult result; // variável do tipo array
 
 // ################################################
 
-int init(void) // função para inicializar a estrutura jogadores
+int init(void) // função para inicializar as 3 estruturas de dados
 {
-    int i;
+    int i,j,k;
 
     for (i=0;i<J;i++)
         {
              jog[i].num_cc=0;
-
+             jog[i].golos=0;
         }
+    for (j=0;j<E;j++)
+        {
+             equip[i].id=0;
+             equip[i].vitorias=0;
+             equip[i].empates=0;
+             equip[i].derrotas=0;
+        }
+    for (k=0;k<R;k++)
+        {
+             result[i].id=0;
+             result[i].golos_a=0;
+             result[i].golos_b=0;
+        }
+
     return 0;
 }
 
-// Função salva_jogador
-void salva_jogadores(listajog lj){
+// Função salva_dados
+void salva_dados(listajog lj,listaequip le,listaresult lr){
 int i;
-FILE *f = fopen("jogadores.bin", "wb");
+FILE *fj = fopen("jogadores.bin", "wb");
+FILE *fe = fopen("equipas.bin", "wb");
+FILE *fr = fopen("resultados.bin", "wb");
 
-    if (f == NULL)
+    if (fj == NULL )
     {
-        fprintf(stderr, "salva_jogador:: Nao e possivel abrir para escrita.\n");
-        exit(1);
+        //fprintf(stderr, "salva_dados:: Erro! Nao e possivel abrir para escrita.\n");
+        printf("\n\tErro! Ficheiro de dados inexistente!");
+        getchar();
+        return;
     }
-    fwrite(lj, sizeof(jogador), J, f );
-    fclose(f);
-    printf("\n\tFicheiro salvo com sucesso!\n");
+    fwrite(lj, sizeof(jogador), J, fj );
+    fclose(fj);
+    fwrite(le, sizeof(equipa), E, fe );
+    fclose(fe);
+    fwrite(lr, sizeof(resultado), R, fr );
+    fclose(fr);
+    printf("\n\tFicheiro de dados salvo com sucesso!\n");
     getchar();
 }
 
-
-
-void carrega_jogadores(listajog *lj){
+// função carrega_dados
+void carrega_dados(listajog *lj,listaequip *le,listaresult *lr){
 int i;
-FILE *f = fopen("jogadores.bin", "rb");
+FILE *fj = fopen("jogadores.bin", "rb");
+FILE *fe = fopen("equipas.bin", "rb");
+FILE *fr = fopen("resultados.bin", "rb");
 
-    if (f == NULL)
+    if (fj == NULL )
     {
-        fprintf(stderr, "carrega_jogador:: Nao e possivel abrir para leitura.\n");
-        exit(1);
+        //fprintf(stderr, "carrega_dados:: Erro! Nao e possivel abrir para leitura.\n");
+        printf("\n\tErro! Ficheiro de dados inexistente!");
+        getchar();
+        return;
+
     }
-    fread(lj, sizeof(jogador), J, f );
-    fclose(f);
-    printf("\n\tFicheiro carregado com sucesso!\n");
+    fread(lj, sizeof(jogador), J, fj );
+    fclose(fj);
+    fread(le, sizeof(equipa), E, fe );
+    fclose(fe);
+    fread(lr, sizeof(resultado), R, fr );
+    fclose(fr);
+    printf("\n\tFicheiro de dados carregado com sucesso!\n");
     getchar();
 }
 
@@ -133,31 +168,29 @@ int menu_4(void)
 
     	do{
         system("clear");
-        printf("\n");
         printf("+       Menu 4       +\n\n");
         printf("| 1.Salvar dados     |\n");
         printf("| 2.Carregar dados   |\n");
         printf("| 0.Sair             |\n");
         printf("\n");
 
-        scanf("%d", &op); //op=getchar(); // ou getch(); em windows
+        scanf("%d", &op);
 
-         // ou system("cls"); em windows
         switch (op) {
             case 1:
-                    salva_jogadores(jog); //menu_1(); // chama função menu Inserir/Editar
+                    salva_dados(jog,equip,result);
                     getchar();
                     break;
             case 2:
-                    carrega_jogadores(&jog);//menu_2(); // chama função menu Listar/Pesquisar
+                    carrega_dados(&jog,&equip,&result);
                     getchar();
                     break;
             case 0:
-                    break; //break; // sai do programa
+                    break; // sai do menu
         }
 
 
-	} while (op!=0);//getchar(); //system("pause");
+	} while (op!=0);
 
     return 0;
 }
@@ -185,7 +218,7 @@ int menu_principal()
 
         scanf("%d", &op); //op=getchar(); // ou getch(); em windows
 
-        system("clear"); // ou system("cls"); em windows
+        //system("clear"); // ou system("cls"); em windows
         switch (op) {
             case 1:
                     menu_1(); // chama função menu Inserir/Editar
@@ -217,65 +250,4 @@ int main()
     menu_principal();
 
 }
-
-/* CODIGO DO PROFESSOR
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define N 100
-
-typedef struct{
-    int idade;
-    char nome[N];
-} User;
-
-typedef User ListUsers[N];
-
-void SaveUsers(ListUsers lu){
-int i;
-FILE *f = fopen("user.bin", "wb");
-
-    if (f == NULL)
-    {
-        fprintf(stderr, "SaveUsers:: Nao e possivel abrir para escrita.\n");
-        exit(1);
-    }
-    fwrite(lu, sizeof(lu[i]), N, f );
-    fclose(f);
-}
-
-
-
-void LoadUsers(ListUsers *lu){
-int i;
-FILE *f = fopen("user.bin", "rb");
-
-    if (f == NULL)
-    {
-        fprintf(stderr, "LoadUsers:: Nao e possivel abrir para leitura.\n");
-        exit(1);
-    }
-    fread(lu, sizeof(lu[i]), N, f );
-    fclose(f);
-}
-
-
-
-int main()
-{
-
-    ListUsers lu, lu2;
-    lu[0].idade = 10;
-    strcpy(lu[0].nome, "Quim Ze");
-    SaveUsers(lu);
-
-
-    LoadUsers(&lu2);
-    printf("%s\t %d\n", lu2[0].nome, lu2[0].idade);
-    return 0;
-}
-
-*/
-
+// FIM DO PROGRAMA #############################################################
