@@ -304,7 +304,9 @@ int registar_jogos(void) // função que regista jogos e resultados
     do
     {
        system("clear");
-       printf("Registar Jogos e Resultados ID [%d]\n\n",i );
+       printf("Registar Jogos e Resultados ID [%d]? [0] SAIR : ",i );
+       scanf("%d",&op);
+       if (op==0) break;
        printf("Data: ");
        scanf(" %99[^\n]",&result[i].data);
        printf("\nLocal: ");
