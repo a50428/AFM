@@ -1,4 +1,4 @@
-// Função menu_1()
+// Função menu_1() "menu_1.c"
 // Função que implementa as operações do Menu 1 (Inserir/Editar)
 
 #include <stdio.h>
@@ -6,6 +6,31 @@
 #include <string.h>
 
 // Outras funções
+
+// ###############################################################
+
+int ver_jogos(void)
+{
+   int i,a,b;
+
+    system("clear");
+    printf("| Local | Data | Resultados |\n");
+    printf("+---------------------------+");
+    for (i=1;i<R;i++)
+        {
+            if (result[i].id==0) break;
+            a=result[i].equipa_a;
+            b=result[i].equipa_b;
+            printf("\n| %s | %s | %s [%d] - %s [%d]",result[i].local,result[i].data,equip[a].nome,result[i].golos_a,equip[b].nome,result[i].golos_b);
+        }
+
+    printf("\n\n+-----------FIM-------------+\n");
+    printf("\nQualquer tecla para voltar...");
+    getchar();
+    getchar();
+    menu_1();
+
+}
 
 // ############################################################
 
@@ -23,7 +48,7 @@ int listar_jog(void) // função que lista jogadores existentes
             printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
         }
 
-    printf("\n\n+------------------FIM-----------------+\n");
+    printf("\n\n+------------------FIM-------------------+\n");
 
     getchar();
 
@@ -45,7 +70,7 @@ int listar_jogx(void) // função que lista jogadores sem clube
             if (jog[i].eq==0) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
         }
 
-    printf("\n\n+------------------FIM-----------------+\n");
+    printf("\n\n+------------------FIM-------------------+\n");
 
     getchar();
 
@@ -64,10 +89,10 @@ int listar_jog_a(int x) // função que lista jogadores existentes na Equipa a
         {
             if (jog[i].num_cc==0) break;
 
-            if (jog[i].eq==equip[x].id) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+            if (jog[i].eq==equip[x].id) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[x].nome,jog[i].pos);
         }
 
-    printf("\n\n+------------------FIM-----------------+\n");
+    printf("\n\n+------------------FIM-------------------+\n");
 
     getchar();
 
@@ -304,39 +329,50 @@ int registar_jogos(void) // função que regista jogos e resultados
     do
     {
        system("clear");
-       printf("Registar Jogos e Resultados ID [%d]? [0] SAIR : ",i );
+       printf("Registar Jogos e Resultados ID [%d]? [1] Registar [0] Sair : ",i);
        scanf("%d",&op);
        if (op==0) break;
-       printf("Data: ");
+       printf("\n\tData: ");
        scanf(" %99[^\n]",&result[i].data);
-       printf("\nLocal: ");
+       printf("\n\tLocal: ");
        scanf(" %99[^\n]",&result[i].local);
        listar_equip();
-       printf("\nEquipa A ID: ");
+       printf("\nEquipa A ID?: ");
        scanf("%d",&a);
-       result[i].equipa_a=a;
-       printf("\nEquipa B ID: ");
+       result[i].equipa_a=a; // carrega equipa A ID para struct
+       printf("\nEquipa B ID?: ");
        scanf("%d",&b);
-       result[i].equipa_b=b;
-       //
-       listar_jog_a(a);
-       printf("\nMarcador ID Equipa A?: ");
-       scanf("%d",&marcador);
-       printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
-       scanf("%d", &golos);
-       jog[marcador].golos=jog[marcador].golos+golos;
-       result[i].marcadores[i]=marcador;
-       result[i].golos_a=result[i].golos_a+golos;
-       //
-       listar_jog_a(b);
-       printf("\nMarcador ID Equipa B?: ");
-       scanf("%d",&marcador);
-       printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
-       scanf("%d", &golos);
-       jog[marcador].golos=jog[marcador].golos+golos;
-       result[i].marcadores[i]=marcador;
-       result[i].golos_a=result[i].golos_b+golos;
-       //
+       result[i].equipa_b=b; // // carrega equipa B ID para struct
+       // repete registo de marcador equipa A
+       do {
+           listar_jog_a(a);
+           printf("\nMarcador ID Equipa A?: "); // repetir
+           scanf("%d",&marcador);
+           printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
+           scanf("%d", &golos);
+
+           jog[marcador].golos=jog[marcador].golos+golos; // acumula golos jogador
+           result[i].marcadores[i]=marcador; // regista marcadores para o jogo atual
+           result[i].golos_a=result[i].golos_a+golos; // soma golos equipa A
+
+           printf("\nRegistar mais marcadores para Equipa A? [1] Sim [0] Nao: ");
+           scanf("%d",&op);
+       } while (op!=0);
+       // repete registo de marcador equipa B
+       do {
+           listar_jog_a(b);
+           printf("\nMarcador ID Equipa B?: "); // repetir
+           scanf("%d",&marcador);
+           printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
+           scanf("%d", &golos);
+
+           jog[marcador].golos=jog[marcador].golos+golos;
+           result[i].marcadores[i]=marcador;
+           result[i].golos_b=result[i].golos_b+golos;
+
+           printf("\nRegistar mais marcadores para Equipa B? [1] Sim [0] Nao: ");
+           scanf("%d",&op);
+       } while (op!=0);
        if (result[i].golos_a>result[i].golos_b)
         {
             equip[a].vitorias++;
@@ -353,17 +389,21 @@ int registar_jogos(void) // função que regista jogos e resultados
             equip[b].empates++;
         }
 
+        printf("\n\t %s [%d] - %s [%d]",equip[a].nome,result[i].golos_a,equip[b].nome,result[i].golos_b);
 
        result[i].ativo=1;
+       result[i].id++;
        i++;
 
-       printf("\nDeseja Registar outro Resultado? [1] SIM / [2] NÃO\n");
+       printf("\n\nDeseja Registar outro Resultado? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
-   	}while (op == 1 && op<R);
+   	}while (op==1 && op<R);
 
     menu_1();
 
 }
+
+
 
 // Função menu_1
 int menu_1(void)
@@ -383,6 +423,7 @@ int menu_1(void)
 	printf("| 4.Editar Equipa Existente       |\n");
 	printf("| 5.Transferencias de jogadores   |\n");
 	printf("| 6.Registo de Jogos e Resultados |\n");
+	printf("| 7.Visualizar Jogos e Resultados |\n");
 	printf("| 0.Menu Principal                |\n");
 	printf("\n");
 
@@ -407,6 +448,9 @@ int menu_1(void)
 				break;
         case '6':
 				registar_jogos(); // chama função editar equipa
+				break;
+        case '7':
+				ver_jogos(); // chama função ver jogos
 				break;
 		case '0':
 				return; //regressa ao menu principal "afm.c"

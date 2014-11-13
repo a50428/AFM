@@ -36,9 +36,9 @@ typedef struct{
     int id;
     char nome[80];
     int lista[26]; // array inteiro que guarda o [id] de 25 jogadores (1-25)
-    int vitorias;
-    int empates;
-    int derrotas;
+    int vitorias; // acumulador
+    int empates; // acumulador
+    int derrotas; // acumulador
     int ativo;
 
 } equipa; // estrutura para variável do tipo equipa
@@ -118,7 +118,7 @@ FILE *fr = fopen("resultados.bin", "wb");
 
     if (fj == NULL )
     {
-        //fprintf(stderr, "salva_dados:: Erro! Nao e possivel abrir para escrita.\n");
+
         printf("\n\tErro! Ficheiro de dados inexistente!");
         getchar();
         return;
@@ -142,7 +142,7 @@ FILE *fr = fopen("resultados.bin", "rb");
 
     if (fj == NULL )
     {
-        //fprintf(stderr, "carrega_dados:: Erro! Nao e possivel abrir para leitura.\n");
+
         printf("\n\tErro! Ficheiro de dados inexistente!");
         getchar();
         return;
@@ -192,7 +192,7 @@ int menu_4(void)
 
 	} while (op!=0);
 
-    return 0;
+    return;
 }
 
 // MENU PRINCIPAL
@@ -202,7 +202,7 @@ int menu_principal()
 
 	int op = '\n'; // variável de opção para o menu
 
-	init(); //inicializa estrutura a zero
+	init(); //inicializa as estruturas de dados a zero
 	//system("chcp 1252>null"); //CODEPAGE PT
 
 	// MENU PRINCIPAL
@@ -234,12 +234,13 @@ int menu_principal()
                     menu_4();
                     break;
             case 0:
+
             return;
-                    //break; // sai do programa
+
         }
 
 
-	} while (1);//getchar(); //system("pause");
+	} while (1);
 
 
 }
