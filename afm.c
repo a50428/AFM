@@ -55,7 +55,7 @@ typedef struct{
     int golos_a;
     int golos_b;
     int marcadores[21]; // array inteiro que guarda o [id] de 20 marcadores (1-20)
-    char data[10];
+    char data[15];
     char local[50];
     int ativo;
 
