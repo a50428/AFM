@@ -56,13 +56,30 @@ int jog_idade(void)
 
 //ir a estrutura dados equipas->jogadores e apresentar no ecrã
 
-int idade;
+int idade, i;
 
 system("clear");
 //listar equipas existentes??
 printf("Qual a idade?\n");
 scanf("%d", &idade);
-printf("\nA idade selecionada é %d \n" , idade);
+
+printf("|  ID  | NOME | IDADE | POSICAO |\n");
+    printf("+----------------------------------------+");
+
+for (i=1;i<J;i++)
+    {
+        if (idade==jog[i].idade)
+         printf("\n| %d | %s | %d | %s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
+    }
+
+    printf("\n\n+------------------FIM-------------------+\n");
+
+    getchar();
+    getchar();
+
+    menu_2();
+
+//printf("\nA idade selecionada é %d \n" , idade);
 
 getchar();
 getchar();
