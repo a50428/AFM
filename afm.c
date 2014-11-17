@@ -68,7 +68,7 @@ listaresult result; // variável do tipo array
 
 #include "menu_1.c"
 #include "menu_2.c"
-//#include "menu_3.c"
+#include "menu_3.c"
 //#include "menu_4.c"
 
 // #################################################################
@@ -227,7 +227,7 @@ int menu_principal()
                     menu_2(); // chama função menu Listar/Pesquisar
                     break;
             case 3:
-                    printf("| 3.Estatisticas     |\n"); // chama função menu Estatisticas
+                    menu_3(); // chama função menu Estatisticas
                     break;
             case 4:
                     system ("clear"); // chama função menu Carregar/Salvar

@@ -4,29 +4,32 @@
 
 
 // MENU estatisticas
-
-
-int menu_1(void)
+int medgolos (void)
 {
-	
-printf("Média de golos por jogo\n");
+    int a,b,numgolos=0, numjogos=0,i,aux=0;
+    float media;
+    for (i=0;i<R;i++)
+        {
+            if  (result[i].ativo==1)
+              {
+              a=result[i].golos_a;
+              b=result[i].golos_b;
+              numgolos=a+b;
+              aux=aux+numgolos;
+              numjogos++;
+                }
+         }
+    media=(float)aux/numjogos;
 
-getch();
+    printf("media de golos por jogo é: %.2f",media);
+    getchar();
+getchar();
+menu_3();
 }
-int menu_2(void)
-{
 
-printf("Qual a equipa?\n");
 
-getch();
-}
-int menu_3(void)
-{
 
-printf("Melhor marcador\n");
-getch();
-}
-int main()
+int menu_3()
 {
 
 
@@ -36,7 +39,7 @@ int main()
 
 	// MENU ESTATISTICAS
 	do{
-		system ("cls");
+		//system ("cls");
         printf("+     Estatisticas     +\n\n");
         printf("| 1.Média de golos por jogo   |\n");
         printf("| 2.Média de idades por equipa |\n");
@@ -49,13 +52,13 @@ int main()
          // ou system("cls"); em windows
         switch (op) {
             case 1:
-                    menu_1(); // chama função media de golos
+                    medgolos(); // chama função media de golos
                     break;
             case 2:
                     menu_2(); // chama função media de idades
                     break;
             case 3:
-                    menu_3(); // chama função melhor marcador
+                    menu_3(); // chama função melhor marcadord
                     break;
 
             case 0:
