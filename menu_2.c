@@ -59,10 +59,10 @@ int jog_idade(void)
 int idade, i;
 
 system("clear");
-//listar equipas existentes??
-printf("Qual a idade?\n");
-scanf("%d", &idade);
 
+printf("Qual a idade?: ");
+scanf("%d", &idade);
+printf("\n\n");
 printf("|  ID  | NOME | IDADE | POSICAO |\n");
     printf("+----------------------------------------+");
 
@@ -73,18 +73,11 @@ for (i=1;i<J;i++)
     }
 
     printf("\n\n+------------------FIM-------------------+\n");
-
+    printf("\nQualquer tecla para continuar...\n");
     getchar();
     getchar();
 
-    menu_2();
-
-//printf("\nA idade selecionada é %d \n" , idade);
-
-getchar();
-getchar();
-
-return 0;
+    return 0;
 
 }
 
@@ -99,7 +92,7 @@ char posicao[20];
 
 system("clear");
 //listar equipas existentes??
-printf("Qual a posição?\n");
+printf("Qual a posição?: ");
 scanf("%s", &posicao);
 printf("\nA posicao selecionada é %s \n" , posicao);
 
@@ -121,7 +114,7 @@ int menu_2()
 	do {
 
         system("clear");
-        printf("+         LISTAR / PESQUISAR        +\n\n");
+        printf("+          LISTAR / PESQUISAR        +\n\n");
         printf("| 1. Listar Resultados por Equipa    |\n");
         printf("| 2. Listar Jogadores por Equipa     |\n");
         printf("| 3. Pesquisar Jogadores por Idade   |\n");
@@ -152,17 +145,10 @@ int menu_2()
 
     } while (op!=0);
 
-	getchar(); //system("pause");
+	//getchar(); //system("pause");
 
 
 return 0;
 
 
 }
-
-/*main()
-{
-
-menu_2();
-
-}*/

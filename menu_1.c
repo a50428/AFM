@@ -156,8 +156,7 @@ int listar_equip(void) // função que lista equipas existentes
     printf("+-------------+");
     for (i=1;i<J;i++)
         {
-            if (equip[i].id==0) break;
-            printf("\n| %d | %s |",equip[i].id,equip[i].nome);
+            if (equip[i].id!=0) printf("\n| %d | %s |",equip[i].id,equip[i].nome);
         }
 
     printf("\n\n+-----FIM-----+\n");
@@ -186,18 +185,23 @@ int inserir_equip(void) // função que insere novo jogador
        printf("Nome: ");
        scanf(" %99[^\n]",&equip[i].nome);
        equip[i].ativo=1;
-       printf("\nPretende selecionar jogadores para %s? [1] SIM / [2] NAO: ",equip[i].nome);
-       scanf("%d",&op);
-       if (op==1)
-        {
-            listar_jogx();
-            printf("\nSelecione o ID do jogador que pretende: ");
-            scanf("%d", &id);
-            jog[id].eq=i;
-            printf("\n\nJogador %s adicionado a %s com sucesso!\n", jog[id].nome,equip[i].nome);
-            getchar();
-        }
+       do
+       {
+           printf("\nPretende selecionar jogadores para %s? [1] SIM / [2] NAO: ",equip[i].nome);
+           scanf("%d",&op);
+           if (op==1)
+            {
+                system("clear");
+                listar_jogx();
+                printf("\nSelecione o ID do jogador que pretende: ");
+                scanf("%d", &id);
+                jog[id].eq=i;
+                printf("\n\nJogador %s adicionado a %s com sucesso!\n", jog[id].nome,equip[i].nome);
+                getchar();
+            }
+       } while (op!=2);
        i++;
+       while (equip[i].id>0) i++;
        printf("\nDeseja Inserir outra Equipa? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
    	}while (op == 1 && op<E);

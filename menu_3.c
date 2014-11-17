@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-
-
-
-// MENU estatisticas
+// função que calcula a media de golos por jogo
 int medgolos (void)
 {
     int a,b,numgolos=0, numjogos=0,i,aux=0;
@@ -21,53 +18,47 @@ int medgolos (void)
          }
     media=(float)aux/numjogos;
 
-    printf("media de golos por jogo é: %.2f",media);
+    printf("\n\nMedia de golos por jogo e: %.2f",media);
     getchar();
-getchar();
-menu_3();
+    getchar();
+
 }
 
-
-
+// função menu_3
 int menu_3()
 {
-
-
-	int op; // variÃ¡vel de opÃ§Ã£o para o menu
-
-	system("chcp 1252>null"); //CODEPAGE PT
-
+	int op; // variavel de opção para o menu
+	//system("chcp 1252>null"); //CODEPAGE PT
 	// MENU ESTATISTICAS
 	do{
-		//system ("cls");
-        printf("+     Estatisticas     +\n\n");
-        printf("| 1.Média de golos por jogo   |\n");
-        printf("| 2.Média de idades por equipa |\n");
-        printf("| 3.Melhor marcador     |\n");
-        printf("| 0.Sair             |\n");
+		system ("clear");
+        printf("+         ESTATISTICAS         +\n\n");
+        printf("| 1.Media de golos por jogo    |\n");
+        printf("| 2.Media de idades por equipa |\n");
+        printf("| 3.Melhor marcador            |\n");
+        printf("| 0.Sair                       |\n");
         printf("\n");
 
-        scanf("%d", &op); //op=getchar(); // ou getch(); em windows
+        scanf("%d", &op);
 
-         // ou system("cls"); em windows
         switch (op) {
             case 1:
                     medgolos(); // chama função media de golos
                     break;
             case 2:
-                    menu_2(); // chama função media de idades
+                    // medidades(); // chama função media de idades
                     break;
             case 3:
-                    menu_3(); // chama função melhor marcadord
+                    // melhor(); // chama função melhor marcadord
                     break;
 
             case 0:
-                   break;
-                   //break; // sai do programa
+                   return;
+                   // sai do menu_3
         }
 
 
-	} while (op !=0 );//getchar(); //system("pause");
+	} while (op !=0 );
 
 
 }
