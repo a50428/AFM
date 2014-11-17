@@ -43,9 +43,12 @@ int listar_jog(void) // função que lista jogadores existentes
     printf("+----------------------------------------+");
     for (i=1;i<J;i++)
         {
-            if (jog[i].num_cc==0) break;
-            team=jog[i].eq;
-            printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+            if (jog[i].ativo!=0)
+            {
+                team=jog[i].eq;
+                printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+            }
+
         }
 
     printf("\n\n+------------------FIM-------------------+\n");
@@ -78,7 +81,7 @@ int listar_jogx(void) // função que lista jogadores sem clube
 
 // ############################################################
 
-int listar_jog_a(int x) // função que lista jogadores existentes na Equipa a
+int listar_jog_a(int x) // função que lista jogadores existentes na Equipa x (argumento da função, equipa A ou B)
 {
     int op,i,team;
 
@@ -107,8 +110,8 @@ int inserir_jog(void) // função que insere novo jogador
 
     do
     {
-        i++; // vai para o ultimo registo
-    } while (jog[i].num_cc>0);
+        i++; // vai para o ultimo registo (ou seja o primeiro indice onde jog[i].ativo=0)
+    } while (jog[i].ativo>0);
 
     do
     {
@@ -130,6 +133,8 @@ int inserir_jog(void) // função que insere novo jogador
        scanf(" %99[^\n]",&jog[i].pos);
        jog[i].ativo=1;
        i++;
+
+       while (jog[i].ativo>0) i++; // vai para o 1º indice não ativo (jog[i].ativo=0)
 
        printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
@@ -213,12 +218,12 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
         printf("\nQual o ID do jogador a apagar/editar? [0] Sair: ");
         scanf("%d", &id);
         if (id==0) break;
-        printf("\n\nApagar Jogador [%d] ? [1] SIM / [2] NAO, Quero editar : ", id);
+        printf("\n\nApagar Jogador (%d) - %s? [1] SIM / [2] NAO, Quero editar : ",id,jog[id].nome);
         scanf("%d", &op);
         if (op==1)
             {
-                jog[id].num_cc=0;
-                jog[id].ativo=0;
+                //jog[id].num_cc=0;
+                jog[id].ativo=0; // jogador indice [id] passa à condição de inativo ou seja apagado
                 printf("\nJogador ID [%d] apagado com sucesso!\n",id);
                 getchar();
             }
