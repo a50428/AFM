@@ -109,7 +109,7 @@ int menu_2()
 
     int op; // variável de opção para o menu
 
-	system("chcp 1252>null"); //CODEPAGE PT
+	//system("chcp 1252>null"); //CODEPAGE PT
 
 	do {
 

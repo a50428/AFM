@@ -16,9 +16,12 @@ int medgolos (void)
               numjogos++;
                 }
          }
-    media=(float)aux/numjogos;
+    media=(float)aux/numjogos; // "cast" do valor ((float)aux/numjogos), transforma inteiro em float
 
-    printf("\n\nMedia de golos por jogo e: %.2f",media);
+    printf("\n\-> Numero de jogos realizados: %d",numjogos);
+    printf("\n\-> Total de golos marcados: %d",aux);
+    printf("\n\-> Media de golos marcados no total de jogos realizados: %.2f",media);
+    printf("\n\nQualquer tecla para continuar...");
     getchar();
     getchar();
 
