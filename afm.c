@@ -17,9 +17,10 @@ typedef struct{
     int num_cc;
     char nome[80];
     char morada[80];
-    char telefone[9];
+    char telefone[10];
     int idade;
     int ano_entrada;
+    int pos_list;
     char pos[50];
     int ativo;
     int golos; // guarda o nº golos do jogador
@@ -85,7 +86,7 @@ listaresult result; // variável do tipo array
 
 int init(void) // função para inicializar as 3 estruturas de dados
 {
-    int i,j,k;
+    int i,j,k,m;
 
     for (i=0;i<J;i++)
         {
@@ -95,6 +96,7 @@ int init(void) // função para inicializar as 3 estruturas de dados
     for (j=0;j<E;j++)
         {
              equip[i].id=0;
+             for (m=0;m<26;m++) equip[j].lista[m]=0;
              equip[i].vitorias=0;
              equip[i].empates=0;
              equip[i].derrotas=0;

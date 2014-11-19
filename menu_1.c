@@ -118,7 +118,6 @@ int inserir_jog(void) // função que insere novo jogador
 {
     int op;
     int i=0;
-
     do
     {
         i++; // vai para o ultimo registo (ou seja o primeiro indice onde jog[i].ativo=0)
@@ -140,14 +139,24 @@ int inserir_jog(void) // função que insere novo jogador
        scanf("%d",&jog[i].idade);
        printf("Ano de Entrada: ");
        scanf("%d",&jog[i].ano_entrada);
-       printf("Posição: ");
-       scanf(" %99[^\n]",&jog[i].pos);
+       //
+       printf("Escolha a Posição: [1]-Guarda-Redes;[2]-Defesa;[3]-Médio;[4]-Avançado.");
+       do {
+        scanf("%d",&jog[i].pos_list);
+       } while (jog[i].pos_list<1 || jog[i].pos_list>4);
+
+       if (jog[i].pos_list==1) strcpy(jog[i].pos,"Guarda-Redes"); // se escolha =1 copia string...
+       else
+        {
+            printf("Posição Especifica: ");
+            scanf(" %99[^\n]",&jog[i].pos);
+        }
        jog[i].ativo=1;
        i++;
 
        while (jog[i].ativo>0) i++; // vai para o proximo indice não ativo (jog[i].ativo=0)
 
-       printf("\nDeseja Inserir outro Jogador? [1] SIM / [2] NÃO\n");
+       printf("\nDeseja Inserir outro Jogador? [1] SIM / [0] NÃO\n");
        scanf("%d", &op);
    	}while (op == 1 && op<J);
 
@@ -181,7 +190,7 @@ int listar_equip(void) // função que lista equipas existentes
 int inserir_equip(void) // função que insere nova equipa
 {
     int op;
-    int i=0;
+    int i=0,j=1;
     int id;
     do
     {
@@ -207,10 +216,11 @@ int inserir_equip(void) // função que insere nova equipa
                 printf("\nSelecione o ID do jogador que pretende: ");
                 scanf("%d", &id);
                 jog[id].eq=i;
+                equip[i].lista[j]=id; j++; // regista id jogador no array lista de jogadores max 25
                 printf("\n\nJogador %s adicionado a %s com sucesso!\n", jog[id].nome,equip[i].nome);
                 getchar();
             }
-       } while (op!=2);
+       } while (op!=2 && equip[i].lista[j]<26);
        i++;
        while (equip[i].id>0) i++; // vai para o proximo indice não ativo (equip[i].ativo=0)
        printf("\nDeseja Inserir outra Equipa? [1] SIM / [2] NÃO\n");
@@ -270,11 +280,21 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
                 scanf("%d",&jog[id].idade);
                 printf("\tAno de Entrada: ");
                 scanf("%d",&jog[id].ano_entrada);
-                printf("\tPosição: ");
-                scanf(" %99[^\n]",&jog[id].pos);
+                //
+                printf("Escolha a Posição: [1]-Guarda-Redes;[2]-Defesa;[3]-Médio;[4]-Avançado.");
+                do {
+                    scanf("%d",&jog[id].pos_list);
+                } while (jog[id].pos_list<1 || jog[id].pos_list>4);
+
+                if (jog[id].pos_list==1) strcpy(jog[id].pos,"Guarda-Redes"); // se escolha =1 copia string...
+                else
+                {
+                    printf("Posição Especifica: ");
+                    scanf(" %99[^\n]",&jog[id].pos);
+                }
             }
 
-        printf("\nDeseja apagar/editar outro Jogador? [1] SIM / [2] NÃO\n");
+        printf("\nDeseja apagar/editar outro Jogador? [1] SIM / [0] NÃO\n");
         scanf("%d", &op);
 
     }while (op == 1);
@@ -325,7 +345,7 @@ int editar_equip(void) // função que edita dados dos jogadores existentes
 
 int tranferir_jog(void) // função que edita dados dos jogadores existentes
 {
-   int op,id_eq,id_jog;
+   int x,k,op,id_eq,id_jog,j=1;
 
    do {
         system("clear");
@@ -333,16 +353,24 @@ int tranferir_jog(void) // função que edita dados dos jogadores existentes
         printf("\nQual o ID do jogador a tranferir? [0] Sair: ");
         scanf("%d", &id_jog);
         if (id_jog==0) break;
+        // eliminar o jogador da lista da equipa anterior...
+        x=jog[id_jog].eq;
+        for (k=1;k<26;k++)
+            {
+                if (equip[x].lista[k]==id_jog) equip[x].lista[k]=0; // quando encontrar coloca a zero.
+            }
         listar_equip(); // lista equipas
         printf("\nQual o ID da equipa de destino? [0] Sair: ");
         scanf("%d", &id_eq);
         if (id_eq==0) break;
         jog[id_jog].eq=id_eq;
+        while (equip[id_eq].lista[j]!=0) j++; // avança até encontrar vazio...
+        equip[id_eq].lista[j]=id_jog; j++; // regista id jogador no array lista de jogadores max 25
         printf("\n\nTranferencia efectuada com sucesso!");
         printf("\n\nDeseja tranferir outro Jogador? [1] SIM / [2] NÃO\n");
         scanf("%d", &op);
 
-    }while (op == 1);
+    }while (op == 1 || j<26); //max 25
 
    menu_1();
 
@@ -381,7 +409,9 @@ int registar_jogos(void) // função que regista jogos e resultados
            listar_jog_a(a);
            printf("\nMarcador ID Equipa A? [0] Sem golos: "); // repetir
            scanf("%d",&marcador);
-           if (marcador!=0)
+
+           if (marcador==0) result[i].golos_a=0; // a equipa A não marcou golos
+           else // senão è zero...
             {
                 printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
                 scanf("%d", &golos);
@@ -392,16 +422,19 @@ int registar_jogos(void) // função que regista jogos e resultados
                 printf("\nRegistar mais marcadores para Equipa A? [1] Sim [0] Nao: ");
                 scanf("%d",&op);
             }
-           result[i].golos_a=0; // a equipa A não marcou golos
+
            op=0;
 
        } while (op!=0);
+
        // repete registo de marcador equipa B
        do {
            listar_jog_a(b);
            printf("\nMarcador ID Equipa B? [0] Sem golos: "); // repetir
            scanf("%d",&marcador);
-           if (marcador!=0)
+
+           if (marcador==0) result[i].golos_b=0; // a equipa B não marcou golos
+           else //senão è zero...
             {
                printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
                scanf("%d", &golos);
@@ -412,10 +445,11 @@ int registar_jogos(void) // função que regista jogos e resultados
                printf("\nRegistar mais marcadores para Equipa B? [1] Sim [0] Nao: ");
                scanf("%d",&op);
             }
-           result[i].golos_b=0; // a equipa B não marcou golos
+
            op=0;
 
        } while (op!=0);
+
        if (result[i].golos_a>result[i].golos_b)
         {
             equip[a].vitorias++;
@@ -445,6 +479,31 @@ int registar_jogos(void) // função que regista jogos e resultados
     menu_1();
 
 }
+
+
+//função de testes para listar todas as equipas e jogadores por equipa
+int eq_list(void)
+{
+    int i,j,id;
+
+    system("clear");
+    printf("| Lista de jogadores por equipa |");
+    for (i=1;i<J;i++)
+        {
+            if (equip[i].id!=0) printf("\n| %d | %s |",equip[i].id,equip[i].nome);
+
+            for (j=1;j<26;j++)
+                {
+                    id=equip[i].lista[j];
+                    if (id!=0) printf("\n\t|--> %s - %d - %s ",jog[id].nome,jog[id].idade,jog[id].pos);
+                }
+        }
+    printf("\n\nQualquer tecla para continuar...");
+    getchar();
+    getchar();
+    menu_1();
+}
+// ####################################################################################################
 
 // Função menu_1
 int menu_1(void)
@@ -493,6 +552,10 @@ int menu_1(void)
         case '7':
 				ver_jogos(); // chama função ver jogos
 				break;
+        // temp
+		case '8':
+				eq_list();
+				return; //regressa ao menu principal "afm.c"
 		case '0':
 				return; //regressa ao menu principal "afm.c"
 
