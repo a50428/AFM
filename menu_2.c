@@ -1,55 +1,81 @@
-// Função menu_2()
-// Função que implementa as operações do Menu 2 (Listar/Pesquisar)
+// Funcao menu_2()
+// Funcao que implementa as operacoes do Menu 2 (Listar/Pesquisar)
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-// Função listar resultados por equipa
+// Funcao listar resultados por equipa
 
 int result_equip(void)
 {
 
-//ir a estrutura dados equipas->resultados e apresentar no ecrã
+int equipa, a, b, i;
 
-char equipa[100];
+//system("clear");
+system("cls");
 
-system("clear");
-//listar equipas existentes??
+listar_equip();
 printf("Qual a equipa?\n");
-scanf("%s",&equipa);
-printf("\nA equipa selecionada é %s \n" , equipa);
+scanf("%d",&equipa);
 
-getchar();
-getchar();
+printf("| Local | Data | Resultados |\n");
+printf("+---------------------------+");
 
-return 0;
+for (i=1;i<E;i++)
+    {
+        if (equipa==result[i].equipa_a || equipa==result[i].equipa_b)
+        {
+        	a=result[i].equipa_a;
+            b=result[i].equipa_b;
+        	printf("\n| %s | %s | %s [%d] - %s [%d]",result[i].local,result[i].data,equip[a].nome,result[i].golos_a,equip[b].nome,result[i].golos_b);
+        	printf("\n");
+    	}
+    }
+
+    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\nQualquer tecla para continuar...\n");
+    getchar();
+    getchar();
 
 }
 
-// Função listar jogadores por equipa
+// Funcao listar jogadores por equipa
 
 int jog_equip(void)
 {
 
-//ir a estrutura dados equipas->jogadores e apresentar no ecrã
+int equipa, x, i;
 
-char equipa[100];
+//system("clear");
+system("cls");
 
-system("clear");
-//listar equipas existentes??
-printf("Qual a equipa_?\n");
-scanf("%s", &equipa);
-printf("\nA equipa selecionada é %s \n" , equipa);
+listar_equip();
+printf("Qual a equipa?\n");
+scanf("%d",&equipa);
 
-getchar();
-getchar();
+printf("| Jogadores de %s |\n" , equip[equipa].nome);
+printf("+---------------------------+");
 
-return 0;
+for (i=1;i<26;i++)
+    {
+        if (equip[equipa].lista[i]>0)
+        {
+        	x=equip[equipa].lista[i];
+        	printf("\n| %s |", jog[x].nome);
+        	printf("\n");
+        	
+    	}
+    }
+
+    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\nQualquer tecla para continuar...\n");
+    getchar();
+    getchar();
 
 }
 
-// Função listar jogadores por idade
+// Funcao listar jogadores por idade
 
 int jog_idade(void)
 {
@@ -60,6 +86,7 @@ int idade, i;
 
 system("clear");
 
+printf("+         PESQUISAR IDADE        +\n\n");
 printf("Qual a idade?: ");
 scanf("%d", &idade);
 printf("\n\n");
@@ -77,48 +104,57 @@ for (i=1;i<J;i++)
     getchar();
     getchar();
 
-    return 0;
-
 }
 
-// Função listar jogadores por posição
+// Funcao listar jogadores por posição
 
 int jog_pos(void)
 {
 
-//ir a estrutura dados equipas->jogadores e apresentar no ecrã
+int i, posic;
 
-char posicao[20];
+//system("clear");
+system("cls");
 
-system("clear");
-//listar equipas existentes??
-printf("Qual a posição?: ");
-scanf("%s", &posicao);
-printf("\nA posicao selecionada é %s \n" , posicao);
+printf("+         PESQUISAR POSICAO        +\n\n");
+printf("Escolha a Posicao: [1]-Guarda-Redes;[2]-Defesa;[3]-Medio;[4]-Avancado ");
+scanf("%d" , &posic);
 
-getchar();
-getchar();
+printf("\n\n");
+printf("|  ID  | NOME | IDADE | POSICAO |\n");
+    printf("+----------------------------------------+");
 
-return 0;
+for (i=1;i<J;i++)
+    {
+        if (posic==jog[i].pos_list)
+         printf("\n| %d | %s | %d | %s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
+    }
+
+    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\nQualquer tecla para continuar...\n");
+    getchar();
+    getchar();
 
 }
-// Função menu_2
+
+// Funcao menu_2
 
 int menu_2()
 {
 
-    int op; // variável de opção para o menu
+    int op;
 
-	//system("chcp 1252>null"); //CODEPAGE PT
+	system("chcp 1252>null"); //CODEPAGE PT
 
 	do {
 
-        system("clear");
+        //system("clear");
+        system("cls");
         printf("+          LISTAR / PESQUISAR        +\n\n");
         printf("| 1. Listar Resultados por Equipa    |\n");
         printf("| 2. Listar Jogadores por Equipa     |\n");
         printf("| 3. Pesquisar Jogadores por Idade   |\n");
-        printf("| 4. Pesquisar Jogadores por Posição |\n");
+        printf("| 4. Pesquisar Jogadores por Posicao |\n");
         printf("| 0. Sair                            |\n");
         printf("\n");
 
@@ -128,27 +164,21 @@ int menu_2()
 	switch (op)
         {
             case 1:
-                result_equip(); // chama função menu Listar Resultados por Equipa
+                result_equip(); 
 				break;
             case 2:
-                jog_equip(); //plantel_eq(); // chama função menu Listar Plantel de Equipa
+                jog_equip(); 
 				break;
             case 3:
-                jog_idade(); //pesq_idade(); // chama função menu Pesquisar Jogadores por Idade
+                jog_idade(); 
 				break;
             case 4:
-                jog_pos(); //pesq_pos(); // chama função menu Pesquisar Jogadores por Posição
+                jog_pos(); 
 				break;
             case 0:
-				break; // sai do programa
+				break; 
         }
 
     } while (op!=0);
-
-	//getchar(); //system("pause");
-
-
-return 0;
-
 
 }
