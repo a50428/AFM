@@ -236,7 +236,7 @@ int inserir_equip(void) // função que insere nova equipa
 
 int editar_jog(void) // função que edita dados dos jogadores existentes
 {
-   int op,id;
+   int op,i,id,aux;
 
    do {
         system("clear");
@@ -249,6 +249,12 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
         if (op==1)
             {
                 jog[id].ativo=0; // jogador indice [id] passa à condição de inativo ou seja apagado
+                aux=jog[id].eq;
+                for (i=1;i<26;i++)
+                    {
+                        if (equip[aux].lista[i]=id) equip[aux].lista[i]=0;
+                    }
+                jog[id].eq=0;
                 printf("\nJogador ID [%d] apagado com sucesso!\n",id);
                 getchar();
             }
@@ -506,15 +512,19 @@ int eq_list(void)
     int i,j,id;
 
     system("clear");
-    printf("| Lista de jogadores por equipa |");
-    for (i=1;i<J;i++)
-        {
-            if (equip[i].id!=0) printf("\n| %d | %s |",equip[i].id,equip[i].nome);
+    printf("| Lista de jogadores por equipa |\n");
 
-            for (j=1;j<26;j++)
+    for (j=1;j<E;j++)
+        {
+            if (equip[j].id>0)
                 {
-                    id=equip[i].lista[j];
-                    if (id!=0) printf("\n\t|--> %s - %d - %s ",jog[id].nome,jog[id].idade,jog[id].pos);
+                    printf("\n|---> %s ",equip[j].nome);
+                    for (i=1;i<J;i++)
+                    {
+                        id=equip[j].id;
+                        if (jog[i].eq==id) printf("\n| %d | %s |",i,jog[i].nome);
+                    }
+                    printf("\n");
                 }
         }
     printf("\n\nQualquer tecla para continuar...");

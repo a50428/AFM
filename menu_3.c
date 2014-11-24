@@ -29,25 +29,23 @@ int medgolos (void)
 
 int medidades (void)
 {
-    int a=0, numjogadores=0,i,equipa,b;
+    int idades=0, numjogadores=0,i,equipa,b;
     float media;
     listar_equip();
-    printf("Qual a equipa?\n");
+    printf("\nQual a equipa?: ");
     scanf("%d",&equipa);
-    for (i=1;i<26;i++)
+    for (i=1;i<J;i++) // percorre jogadores
         {
-            if  (equip[equipa].lista[i]>0)
-              {
-              b=equip[equipa].lista[i]; //id jogador
-              a=a+(jog[b].idade);
-              numjogadores++;
-
+            if (jog[i].eq==equipa) // se for == a equipa escolhida
+                {
+                 idades=idades+jog[i].idade; // soma idades dos jogadores da mesma equipa
+                 numjogadores++; //incrementa numero de jogadores
                 }
-         }
-    media=(float)a/numjogadores;
+        }
+    media=(float)idades/numjogadores; // calcula media
 
-    printf("\nMedia de idades é: %.f",media);
-    printf("\nQualquer tecla para continuar...\n");
+    printf("\nA Media de idades do %s: %.f",equip[equipa].nome,media);
+    printf("\n\nQualquer tecla para continuar...\n");
     getchar();
     getchar();
 }
@@ -59,23 +57,21 @@ int i,j,temp,k;
 //ordenar array
  for (i=1;i<=(J-1);i++)
      for (j=J;j>i;j--)
-         if (jog[j].golos>jog[j-1].golos)
+         if (jog[j].golos>jog[j-1].golos) // se j for maior que o anterior troca
             {
              temp=jog[j-1].golos;
              jog[j-1].golos=jog[j].golos;
              jog[j].golos=temp;
             }
 //mostrar top 10
+system("clear");
 printf("+         TOP 10          +\n\n");
-printf("| Nome jogador | golos marcados |\n");
-    for (k=1;k<11;k++) printf("\n| %d | %s | %d |",k, jog[k].nome,jog[k].golos);
+printf("| ID | Nome jogador | golos marcados |\n");
+    for (k=1;k<11;k++) printf("\n| %3d | %20s | %3d |",k, jog[k].nome,jog[k].golos);
 printf("\n\n+-------------FIM-------------+\n");
 printf("\nQualquer tecla para continuar...\n");
     getchar();
     getchar();
-
-
-
 }
 
 
