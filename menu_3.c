@@ -46,10 +46,10 @@ int medidades (void)
          }
     media=(float)a/numjogadores;
 
-    printf("media de idades é: %.f",media);
+    printf("\nMedia de idades é: %.f",media);
+    printf("\nQualquer tecla para continuar...\n");
     getchar();
-getchar();
-menu_3();
+    getchar();
 }
 
 int mmarcador (void)
@@ -68,11 +68,11 @@ int i,j,temp,k;
 //mostrar top 10
 printf("+         ESTATISTICAS          +\n\n");
 printf("| Nome jogador | golos marcados |\n");
-    for (k=1;k<11;k++) printf("\n| %s | %d |", jog[k].nome,jog[k].golos);
+    for (k=1;k<11;k++) printf("\n| %d | %s | %d |",k, jog[k].nome,jog[k].golos);
 printf("\n\n+-------------FIM-------------+\n");
+printf("\nQualquer tecla para continuar...\n");
     getchar();
-getchar();
-menu_3();
+    getchar();
 
 
 
