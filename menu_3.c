@@ -66,7 +66,7 @@ int i,j,temp,k;
              jog[j].golos=temp;
             }
 //mostrar top 10
-printf("+         ESTATISTICAS          +\n\n");
+printf("+         TOP 10          +\n\n");
 printf("| Nome jogador | golos marcados |\n");
     for (k=1;k<11;k++) printf("\n| %d | %s | %d |",k, jog[k].nome,jog[k].golos);
 printf("\n\n+-------------FIM-------------+\n");
