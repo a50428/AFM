@@ -27,6 +27,58 @@ int medgolos (void)
 
 }
 
+int medidades (void)
+{
+    int a=0, numjogadores=0,i,equipa,b;
+    float media;
+    listar_equip();
+    printf("Qual a equipa?\n");
+    scanf("%d",&equipa);
+    for (i=1;i<26;i++)
+        {
+            if  (equip[equipa].lista[i]>0)
+              {
+              b=equip[equipa].lista[i]; //id jogador
+              a=a+(jog[b].idade);
+              numjogadores++;
+
+                }
+         }
+    media=(float)a/numjogadores;
+
+    printf("media de idades é: %.f",media);
+    getchar();
+getchar();
+menu_3();
+}
+
+int mmarcador (void)
+{
+int i,j,temp,k;
+
+//ordenar array
+ for (i=1;i<=(J-1);i++)
+     for (j=J;j>i;j--)
+         if (jog[j].golos>jog[j-1].golos)
+            {
+             temp=jog[j-1].golos;
+             jog[j-1].golos=jog[j].golos;
+             jog[j].golos=temp;
+            }
+//mostrar top 10
+printf("+         ESTATISTICAS          +\n\n");
+printf("| Nome jogador | golos marcados |\n");
+    for (k=1;k<11;k++) printf("\n| %s | %d |", jog[k].nome,jog[k].golos);
+printf("\n\n+-------------FIM-------------+\n");
+    getchar();
+getchar();
+menu_3();
+
+
+
+}
+
+
 // função menu_3
 int menu_3()
 {
@@ -49,10 +101,10 @@ int menu_3()
                     medgolos(); // chama função media de golos
                     break;
             case 2:
-                    // medidades(); // chama função media de idades
+                    medidades();// medidades(); // chama função media de idades
                     break;
             case 3:
-                    // melhor(); // chama função melhor marcadord
+                    mmarcador();// melhor(); // chama função melhor marcadord
                     break;
 
             case 0:
