@@ -52,13 +52,13 @@ int listar_jog(void) // função que lista jogadores existentes
 
     system("clear");
     printf("|  ID  | NOME | IDADE | EQUIPA | POSICAO |\n");
-    printf("+----------------------------------------+");
+    printf("+-------------------------------------------+");
     for (i=1;i<J;i++)
         {
-            if (jog[i].ativo!=0)
+            if (jog[i].ativo>0 && jog[i].ativo!=2) //(!=2) para a situação de sjogadores inativos mas listados
             {
                 team=jog[i].eq;
-                printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+                printf("\n| %3d | %20s | %2d | %10s | %20s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
             }
 
         }
@@ -80,7 +80,7 @@ int listar_jogx(void) // função que lista jogadores sem clube
     printf("+----------------------------------------+");
     for (i=1;i<J;i++)
         {
-            if (jog[i].num_cc==0) break;
+            if (jog[i].ativo==0) break;
             team=jog[i].eq;
             if (jog[i].eq==0) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
         }
@@ -122,7 +122,7 @@ int inserir_jog(void) // função que insere novo jogador
     do
     {
         i++; // vai para o ultimo registo (ou seja o primeiro indice onde jog[i].ativo=0)
-    } while (jog[i].ativo>0);
+    } while (jog[i].ativo>0 && jog[i].ativo<3); // se for ativo=1 ou ativo=2 avança
 
     do
     {
@@ -155,7 +155,7 @@ int inserir_jog(void) // função que insere novo jogador
        jog[i].ativo=1;
        i++;
 
-       while (jog[i].ativo>0) i++; // vai para o proximo indice não ativo (jog[i].ativo=0)
+       while (jog[i].ativo>0 && jog[i].ativo<3) i++; // vai para o proximo indice não ativo (jog[i].ativo=0)
 
        printf("\nDeseja Inserir outro Jogador? [1] SIM / [0] NÃO\n");
        scanf("%d", &op);
@@ -248,11 +248,19 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
         scanf("%d", &op);
         if (op==1)
             {
-                //jog[id].num_cc=0;
                 jog[id].ativo=0; // jogador indice [id] passa à condição de inativo ou seja apagado
                 printf("\nJogador ID [%d] apagado com sucesso!\n",id);
                 getchar();
             }
+
+        if (op==1 && jog[id].golos>0)
+            {
+                jog[id].ativo=2; // jogador indice [id] passa à condição de inativo mas tem golos (ativo=2)
+                printf("\nATENÇÃO! O jogador %s tem golos marcados!",jog[id].nome);
+                printf("\nSerá apagado da lista de jogadores ativos mas continuará a constar da lista de marcadores");
+                getchar();
+            }
+
         if (op==2)
             {
                 // Mostra ficha de jogador...
