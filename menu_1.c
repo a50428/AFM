@@ -11,7 +11,7 @@
 
 int ver_jogos(void)
 {
-   int i,j,x,a,b;
+   int i,j,x,y,a,b;
 
     system("clear");
     printf("| Local | Data | Resultados | ---> Marcadores |\n");
@@ -26,7 +26,8 @@ int ver_jogos(void)
             for (j=1;j<21;j++) // lista os marcadores para cada jogo
             {
                 x=result[i].marcadores[j];
-                if (x>0) printf("\n\---> %s ", jog[x].nome);
+                y=result[i].marcados[j];
+                if (x>0) printf("\n\---> %s [%d] ",jog[x].nome,y);
             }
             printf("\n");
         }
@@ -410,20 +411,26 @@ int registar_jogos(void) // função que regista jogos e resultados
            printf("\nMarcador ID Equipa A? [0] Sem golos: "); // repetir
            scanf("%d",&marcador);
 
-           if (marcador==0) result[i].golos_a=0; // a equipa A não marcou golos
+
+           if (marcador==0)
+            {
+                op=0;
+                result[i].golos_a=0; // a equipa A não marcou golos
+            }
            else // senão è zero...
             {
                 printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
                 scanf("%d", &golos);
                 jog[marcador].golos=jog[marcador].golos+golos; // acumula golos jogador
                 result[i].marcadores[j]=marcador; // regista marcadores para o jogo atual
+                result[i].marcados[j]=golos;
                 j++;
                 result[i].golos_a=result[i].golos_a+golos; // soma golos equipa A
                 printf("\nRegistar mais marcadores para Equipa A? [1] Sim [0] Nao: ");
                 scanf("%d",&op);
             }
 
-           op=0;
+
 
        } while (op!=0);
 
@@ -433,20 +440,24 @@ int registar_jogos(void) // função que regista jogos e resultados
            printf("\nMarcador ID Equipa B? [0] Sem golos: "); // repetir
            scanf("%d",&marcador);
 
-           if (marcador==0) result[i].golos_b=0; // a equipa B não marcou golos
+           if (marcador==0)
+            {
+                op=0;
+                result[i].golos_a=0; // a equipa B não marcou golos
+            }
            else //senão è zero...
             {
                printf("\nQuantos golos marcou %s?: ", jog[marcador].nome);
                scanf("%d", &golos);
                jog[marcador].golos=jog[marcador].golos+golos;
                result[i].marcadores[j]=marcador;
+               result[i].marcados[j]=golos;
                j++;
                result[i].golos_b=result[i].golos_b+golos;
                printf("\nRegistar mais marcadores para Equipa B? [1] Sim [0] Nao: ");
                scanf("%d",&op);
             }
 
-           op=0;
 
        } while (op!=0);
 
