@@ -14,14 +14,14 @@ int ver_jogos(void)
    int i,j,x,y,a,b;
 
     system("clear");
-    printf("| Local | Data | Resultados | ---> Marcadores |\n");
-    printf("+---------------------------+");
+    printf("| %-15s | %-10s | %-30s |\n","LOCAL","DATA","RESULTADOS");
+    printf("+---------------------------------------------------------------+");
     for (i=1;i<R;i++)
         {
             if (result[i].id==0) break;
             a=result[i].equipa_a;
             b=result[i].equipa_b;
-            printf("\n| %s | %s | %s [%d] - %s [%d]",result[i].local,result[i].data,equip[a].nome,result[i].golos_a,equip[b].nome,result[i].golos_b);
+            printf("\n| %-15s | %-10s | %-10s [%d] - %-9s [%d] |",result[i].local,result[i].data,equip[a].nome,result[i].golos_a,equip[b].nome,result[i].golos_b);
             printf("\n");
             for (j=1;j<21;j++) // lista os marcadores para cada jogo
             {
@@ -32,16 +32,13 @@ int ver_jogos(void)
             printf("\n");
         }
 
-    printf("\n+-----------FIM-------------+\n");
-    printf("\nQualquer tecla para voltar...");
+    printf("\n+-----------------------------FIM-------------------------------+");
+    printf("\n\nQualquer tecla para voltar...");
 
 
     getchar();
     getchar();
     menu_1();
-
-
-
 }
 
 // ############################################################
@@ -51,22 +48,21 @@ int listar_jog(void) // função que lista jogadores existentes
     int op,i,team;
 
     system("clear");
-    printf("|  ID  | NOME | IDADE | EQUIPA | POSICAO |\n");
-    printf("+-------------------------------------------+");
+    printf("| %-3s | %-20s | %-5s | %-10s | %-20s |\n","ID","NOME","IDADE","EQUIPA","POSICAO");
+    printf("+------------------------------------------------------------------------+");
     for (i=1;i<J;i++)
         {
             if (jog[i].ativo>0 && jog[i].ativo!=2) //(!=2) para a situação de sjogadores inativos mas listados
             {
                 team=jog[i].eq;
-                printf("\n| %3d | %20s | %2d | %10s | %20s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+                printf("\n| %-3d | %-20s | %-5d | %-10s | %-20s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
             }
 
         }
 
-    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\n+------------------------------FIM---------------------------------------+");
 
     getchar();
-
 }
 
 // ############################################################
@@ -76,16 +72,16 @@ int listar_jogx(void) // função que lista jogadores sem clube
     int op,i,team;
 
     system("clear");
-    printf("|  ID  | NOME | IDADE | EQUIPA | POSICAO |\n");
-    printf("+----------------------------------------+");
+    printf("| %-3s | %-20s | %-5s | %-10s | %-20s |\n","ID","NOME","IDADE","EQUIPA","POSICAO");
+    printf("+------------------------------------------------------------------------+");
     for (i=1;i<J;i++)
         {
             if (jog[i].ativo==0) break;
             team=jog[i].eq;
-            if (jog[i].eq==0) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
+            if (jog[i].eq==0) printf("\n| %-3d | %-20s | %-5d | %-10s | %-20s |",i,jog[i].nome,jog[i].idade,equip[team].nome,jog[i].pos);
         }
 
-    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\n+------------------------------FIM---------------------------------------+");
 
     getchar();
 
@@ -98,16 +94,16 @@ int listar_jog_a(int x) // função que lista jogadores existentes na Equipa x (
     int op,i,team;
 
     system("clear");
-    printf("|  ID  | NOME | IDADE | EQUIPA | POSICAO |\n");
-    printf("+----------------------------------------+");
+    printf("| %-3s | %-20s | %-5s | %-10s | %-20s |\n","ID","NOME","IDADE","EQUIPA","POSICAO");
+    printf("+------------------------------------------------------------------------+");
     for (i=1;i<J;i++)
         {
             if (jog[i].num_cc==0) break;
 
-            if (jog[i].eq==equip[x].id) printf("\n| %d | %s | %d | %s | %s |",i,jog[i].nome,jog[i].idade,equip[x].nome,jog[i].pos);
+            if (jog[i].eq==equip[x].id) printf("\n| %-3d | %-20s | %-5d | %-10s | %-20s |",i,jog[i].nome,jog[i].idade,equip[x].nome,jog[i].pos);
         }
 
-    printf("\n\n+------------------FIM-------------------+\n");
+    printf("\n+------------------------------FIM---------------------------------------+");
 
     getchar();
 
@@ -162,7 +158,6 @@ int inserir_jog(void) // função que insere novo jogador
    	}while (op == 1 && op<J);
 
     menu_1();
-
 }
 
 // ############################################################
@@ -173,14 +168,14 @@ int listar_equip(void) // função que lista equipas existentes
     int i;
 
     system("clear");
-    printf("|  ID  | NOME |\n");
-    printf("+-------------+");
+    printf("| %-3s | %-20s |\n","ID","NOME");
+    printf("+----------------------------+");
     for (i=1;i<J;i++)
         {
-            if (equip[i].id!=0) printf("\n| %d | %s |",equip[i].id,equip[i].nome);
+            if (equip[i].id!=0) printf("\n| %-3d | %-20s |",equip[i].id,equip[i].nome);
         }
 
-    printf("\n\n+-----FIM-----+\n");
+    printf("\n+------------FIM-------------+");
 
     getchar();
 
