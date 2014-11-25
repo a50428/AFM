@@ -11,7 +11,7 @@ int result_equip(void)
 
 	int equipa, a, b, i;
 
-	system("cls");
+	system("clear");
 
 	listar_equip();
 	printf("\n\nQual a equipa?: ");
@@ -43,13 +43,13 @@ int jog_equip(void)
 
 	int equipa, x, i;
 
-	system("cls");
+	system("clear");
 
 	listar_equip();
 	printf("\n\nQual a equipa?: ");
 	scanf("%d",&equipa);
-	
-	system("cls");
+
+	system("clear");
 
 	printf("\n|     Jogadores de %s     |" , equip[equipa].nome);
 	printf("\n+----------------------------+\n");
@@ -67,25 +67,25 @@ int jog_equip(void)
 // Funcao listar jogadores por idade
 int jog_idade(void)
 {
-	
+
 	int idade, i;
 
-	system("cls");
+	system("clear");
 
 	printf("+         PESQUISAR IDADE        +\n\n");
 	printf("Qual a idade?: ");
 	scanf("%d", &idade);
 	printf("\n\n");
-	printf("| ID  |     NOME       | IDADE |      POSICAO     |\n");
-    printf("+-------------------------------------------------+");
+	printf("| ID  |       NOME         | IDADE |      POSICAO     |\n");
+    printf("+-----------------------------------------------------+");
 
 	for (i=1;i<J;i++)
     	{
         	if (idade==jog[i].idade && jog[i].ativo>0 && jog[i].ativo!=2)
-         	printf("\n| %-3d | %-14s |  %d   | %-16s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
+         	printf("\n| %-3d | %-18s |  %d   | %-16s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
     	}
 
-    printf("\n\n+----------------------FIM------------------------+\n");
+    printf("\n\n+----------------------FIM----------------------------+\n");
     printf("\nQualquer tecla para continuar...\n");
     getchar();
     getchar();
@@ -98,23 +98,23 @@ int jog_pos(void)
 
 	int i, posic;
 
-	system("cls");
+	system("clear");
 
 	printf("+         PESQUISAR POSICAO        +\n\n");
 	printf("Escolha a Posicao: [1]-Guarda-Redes;[2]-Defesa;[3]-Medio;[4]-Avancado ");
 	scanf("%d" , &posic);
 
 	printf("\n\n");
-	printf("| ID  |      NOME      | IDADE |     POSICAO     |\n");
-    printf("+------------------------------------------------+");
+	printf("| ID  |        NOME        | IDADE |      POSICAO      |\n");
+    printf("+------------------------------------------------------+");
 
 	for (i=1;i<J;i++)
     	{
         	if (posic==jog[i].pos_list && jog[i].ativo>0 && jog[i].ativo!=2)
-         	printf("\n| %-3d | %-14s |  %d   | %-15s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
+         	printf("\n| %-3d | %-18s |  %d   | %-17s |",i,jog[i].nome,jog[i].idade,jog[i].pos);
     	}
 
-    printf("\n\n+---------------------FIM------------------------+\n");
+    printf("\n\n+------------------------FIM---------------------------+\n");
     printf("\nQualquer tecla para continuar...\n");
     getchar();
     getchar();
@@ -131,8 +131,8 @@ int menu_2()
 
 	do {
 
-        system("cls");
-    
+        system("clear");
+
         printf("+          LISTAR / PESQUISAR        +\n\n");
         printf("| 1.Listar Resultados por Equipa    |\n");
         printf("| 2.Listar Jogadores por Equipa     |\n");
