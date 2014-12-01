@@ -256,7 +256,7 @@ int inserir_equip(void)
             }
        } while (op!=2 && equip[i].lista[j]<26);
        i++;
-       while (equip[i].id>0) i++; // vai para o proximo indice não ativo (equip[i].ativo=0)
+       //while (equip[i].id>0) i++; // vai para o proximo indice não ativo (equip[i].ativo=0)
        printf("\nDeseja Inserir outra Equipa? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
    	}while (op == 1 && op<E);
@@ -420,9 +420,10 @@ int tranferir_jog(void)
                 if (equip[x].lista[k]==id_jog) equip[x].lista[k]=0; // quando encontrar coloca a zero.
             }
         listar_equip(); // lista equipas
-        printf("\nQual o ID da equipa de destino? [0] Sair: ");
+        printf("\nQual o ID da equipa de destino? [-1] Sem Equipa - [0] Sair: ");
         scanf("%d", &id_eq);
         if (id_eq==0) break;
+        if (id_eq==-1) jog[id_jog].eq=0; break;
         jog[id_jog].eq=id_eq;
         while (equip[id_eq].lista[j]!=0) j++; // avança até encontrar vazio...
         equip[id_eq].lista[j]=id_jog; j++; // regista id jogador no array lista de jogadores max 25
@@ -444,7 +445,7 @@ int tranferir_jog(void)
 */
 int registar_jogos(void)
 {
-    int a,b,op,marcador,golos,i=0,j=1;
+    int a,b,op,marcador=0,golos=0,i=0,j=1;
 
     do
     {
@@ -506,7 +507,7 @@ int registar_jogos(void)
            if (marcador==0)
             {
                 op=0;
-                result[i].golos_a=0; // a equipa B não marcou golos
+                result[i].golos_b=0; // a equipa B não marcou golos
             }
            else //senão è zero...
             {
