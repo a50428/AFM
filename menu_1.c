@@ -1,14 +1,28 @@
-// Função menu_1() "menu_1.c"
-// Função que implementa as operações do Menu 1 (Inserir/Editar)
+// Projeto Modulo Temático LTIC 2014/15
+// AFM - Software gestão para Associação de Futebol do Montenegro
+// "menu_1"
+
+/* !
+* \ file menu_1.c
+* \ brief Projeto Modulo Temático LTIC 2014/15 "menu_1.c"
+* \ details "menu_1.c" que implementa as operações do Menu 1 e respetivas funções
+* \ author Valter António
+* \ date 01 dez 2014
+* \ bug sem erros detetados
+* \ version 0.1
+* \ copyright GNU Public License.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-// Outras funções
-
-// ###############################################################
-
+// ! ver_jogos
+/* *
+* função que mostra no ecran os jogos realizados e os marcadores para cada jogo
+* \ param void
+* \ return int
+*/
 int ver_jogos(void)
 {
    int i,j,x,y,a,b;
@@ -41,8 +55,12 @@ int ver_jogos(void)
     menu_1();
 }
 
-// ############################################################
-
+// ! listar_jog
+/* *
+* função que lista todos os jogadores registados ativos
+* \ param void
+* \ return int
+*/
 int listar_jog(void) // função que lista jogadores existentes
 {
     int op,i,team;
@@ -65,8 +83,12 @@ int listar_jog(void) // função que lista jogadores existentes
     getchar();
 }
 
-// ############################################################
-
+// ! listar_jogx
+/* *
+* função que lista jogadores registados sem equipa
+* \ param void
+* \ return int
+*/
 int listar_jogx(void) // função que lista jogadores sem clube
 {
     int op,i,team;
@@ -87,9 +109,13 @@ int listar_jogx(void) // função que lista jogadores sem clube
 
 }
 
-// ############################################################
-
-int listar_jog_a(int x) // função que lista jogadores existentes na Equipa x (argumento da função, ID da equipa A ou B)
+// ! listar_jog_a
+/* *
+* função que lista jogadores registados numa determinada equipa
+* \ param x : int
+* \ return int
+*/
+int listar_jog_a(int x)
 {
     int op,i,team;
 
@@ -109,8 +135,12 @@ int listar_jog_a(int x) // função que lista jogadores existentes na Equipa x (
 
 }
 
-// ####################################################
-
+// ! inserir_jog
+/* *
+* função que regista novos jogadores na estrutura
+* \ param void
+* \ return int
+*/
 int inserir_jog(void) // função que insere novo jogador
 {
     int op;
@@ -160,8 +190,12 @@ int inserir_jog(void) // função que insere novo jogador
     menu_1();
 }
 
-// ############################################################
-
+// ! listar_equip
+/* *
+* função que mostra no ecran a lista de equipas registadas
+* \ param void
+* \ return int
+*/
 int listar_equip(void) // função que lista equipas existentes
 {
     int op;
@@ -181,9 +215,13 @@ int listar_equip(void) // função que lista equipas existentes
 
 }
 
-// ####################################################
-
-int inserir_equip(void) // função que insere nova equipa
+// ! inserir_equip
+/* *
+* função que regista uma nova equipa
+* \ param void
+* \ return int
+*/
+int inserir_equip(void)
 {
     int op;
     int i=0,j=1;
@@ -227,9 +265,13 @@ int inserir_equip(void) // função que insere nova equipa
 
 }
 
-// ############################################################
-
-int editar_jog(void) // função que edita dados dos jogadores existentes
+// ! editar_jog
+/* *
+* função que apaga/edita os dados dos jogadores já registados
+* \ param void
+* \ return int
+*/
+int editar_jog(void)
 {
    int op,i,id,aux;
 
@@ -313,9 +355,13 @@ int editar_jog(void) // função que edita dados dos jogadores existentes
 
 }
 
-// ############################################################
-
-int editar_equip(void) // função que edita dados dos jogadores existentes
+// ! editar_equip
+/* *
+* função que edita os dados das equipas
+* \ param void
+* \ return int
+*/
+int editar_equip(void)
 {
    int op,id;
 
@@ -351,9 +397,13 @@ int editar_equip(void) // função que edita dados dos jogadores existentes
 
 }
 
-// ############################################################
-
-int tranferir_jog(void) // função que edita dados dos jogadores existentes
+// ! transferir_jog
+/* *
+* função que realiza tranferencias de jogadores entre equipas
+* \ param void
+* \ return int
+*/
+int tranferir_jog(void)
 {
    int x,k,op,id_eq,id_jog,j=1;
 
@@ -386,9 +436,13 @@ int tranferir_jog(void) // função que edita dados dos jogadores existentes
 
 }
 
-// ####################################################
-
-int registar_jogos(void) // função que regista jogos e resultados
+// ! registar_jogos
+/* *
+* função que regista jogos e resultados
+* \ param void
+* \ return int
+*/
+int registar_jogos(void)
 {
     int a,b,op,marcador,golos,i=0,j=1;
 
@@ -500,9 +554,13 @@ int registar_jogos(void) // função que regista jogos e resultados
 
 }
 
-
-//função de testes para listar todas as equipas e jogadores por equipa
-int eq_list(void)
+// ! menu_principal
+/* *
+* função de testes para listar todas as equipas e jogadores por equipa
+* \ param void
+* \ return void
+*/
+void eq_list(void)
 {
     int i,j,id;
 
@@ -527,18 +585,18 @@ int eq_list(void)
     getchar();
     menu_1();
 }
-// ####################################################################################################
 
-// Função menu_1
+// ! menu_1
+/* *
+* funcao que implementa as operações do "Menu 1" (Inserir/Editar)
+* \ param void
+* \ return int
+*/
 int menu_1(void)
 {
+    int op; // variável de opção para o menu
 
-
-    int op = '\n'; // variável de opção para o menu
-
-	//system("chcp 1252>null"); //CODEPAGE PT
-
-	// MENU PRINCIPAL
+	// MENU 1
 	system("clear");
 	printf("+         INSERIR / EDITAR        +\n\n");
 	printf("| 1.Inserir Novo Jogador          |\n");
@@ -550,41 +608,37 @@ int menu_1(void)
 	printf("| 7.Visualizar Jogos e Resultados |\n");
 	printf("| 0.Menu Principal                |\n");
 	printf("\n");
-
-    while(op == '\n')
-        scanf("%c",&op);
-	//system("clear"); // ou system("cls"); em windows
+    scanf("%d", &op);
+	fflush(stdin);
 	switch (op) {
-		case '1':
+		case 1:
 				inserir_jog(); // chama função menu inserir jogador
 				break;
-		case '2':
+		case 2:
 				editar_jog(); // chama a função que edita jogadores
 				break;
-		case '3':
+		case 3:
 				inserir_equip(); // chama a função inserir equipa
 				break;
-		case '4':
+		case 4:
 				editar_equip(); // chama função editar equipa
 				break;
-		case '5':
+		case 5:
 				tranferir_jog(); // chama função editar equipa
 				break;
-        case '6':
+        case 6:
 				registar_jogos(); // chama função editar equipa
 				break;
-        case '7':
+        case 7:
 				ver_jogos(); // chama função ver jogos
 				break;
         // temp
-		case '8':
-				eq_list();
+		case 8:
+				eq_list(); // lista equipas e resultados (testes)
+				break;
+		case 0:
 				return; //regressa ao menu principal "afm.c"
-		case '0':
-				return; //regressa ao menu principal "afm.c"
-
 	}
-
-
 }
 
+// FIM de menu_1.c #############################################################

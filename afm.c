@@ -1,10 +1,21 @@
 // Projeto Modulo Temático LTIC
 // AFM - Software gestão para Associação de Futebol do Montenegro
+// "afm.c"
+
+/* !
+* \ file menu_1.c
+* \ brief Projeto Modulo Temático LTIC 2014/15 "afm.c"
+* \ details "afm.c" Ficheiro principal do programa, implementa o menu principal, as estruturas de dados e a inicialização de variáveis
+* \ author Valter António
+* \ date 01 dez 2014
+* \ bug sem erros detetados
+* \ version 0.1
+* \ copyright GNU Public License.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 
 // Definição das estruturas de dados
 
@@ -67,24 +78,17 @@ typedef resultado listaresult[R]; // array de estruturas tipo resultado tamanho 
 
 listaresult result; // variável do tipo array
 
-
+//inclusão de ficheiros locais
 #include "menu_1.c"
 #include "menu_2.c"
 #include "menu_3.c"
-//#include "menu_4.c"
 
-// #################################################################
-
-/*void gotoxy(int x, int y) // função gotoxy()
-{
-  COORD coord;
-  coord.X = x;
-  coord.Y = y;
-  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}*/
-
-// ################################################
-
+// ! init
+/* *
+* funcao que inicializa as estruturas de dados
+* \ param void
+* \ return int
+*/
 int init(void) // função para inicializar as 3 estruturas de dados
 {
     int i,j,k,m;
@@ -112,7 +116,14 @@ int init(void) // função para inicializar as 3 estruturas de dados
     return 0;
 }
 
-// Função salva_dados
+// ! salva_dados
+/* *
+* funcao que salva (guarda) os registos das estruturas de dados
+* \ param lj : listajog
+* \ param le : listaequip
+* \ param lr : listaresult
+* \ return int
+*/
 void salva_dados(listajog lj,listaequip le,listaresult lr){
 int i;
 FILE *fj = fopen("jogadores.bin", "wb");
@@ -121,7 +132,6 @@ FILE *fr = fopen("resultados.bin", "wb");
 
     if (fj == NULL )
     {
-
         printf("\n\tErro! Ficheiro de dados inexistente!");
         getchar();
         return;
@@ -136,8 +146,15 @@ FILE *fr = fopen("resultados.bin", "wb");
     getchar();
 }
 
-// função carrega_dados
-void carrega_dados(listajog *lj,listaequip *le,listaresult *lr){
+// ! carrega_dados
+/* *
+* funcao que carrega os registos das estruturas de dados
+* \ param lj : listajog
+* \ param le : listaequip
+* \ param lr : listaresult
+* \ return int
+*/
+int carrega_dados(listajog *lj,listaequip *le,listaresult *lr){
 int i;
 FILE *fj = fopen("jogadores.bin", "rb");
 FILE *fe = fopen("equipas.bin", "rb");
@@ -145,11 +162,9 @@ FILE *fr = fopen("resultados.bin", "rb");
 
     if (fj == NULL )
     {
-
         printf("\n\tErro! Ficheiro de dados inexistente!");
         getchar();
         return;
-
     }
     fread(lj, sizeof(jogador), J, fj );
     fclose(fj);
@@ -161,9 +176,12 @@ FILE *fr = fopen("resultados.bin", "rb");
     getchar();
 }
 
-
-// Função menu_4
-
+// ! menu_4
+/* *
+* funcao que implementa o Menu 4 (Salvar/Carregar Dados)
+* \ param void
+* \ return int
+*/
 int menu_4(void)
 {
     int op;
@@ -198,15 +216,17 @@ int menu_4(void)
     return;
 }
 
-// MENU PRINCIPAL
+// ! menu_principal
+/* *
+* funcao que implementa o Menu Principal do programa
+* \ param void
+* \ return int
+*/
 int menu_principal()
 {
-
-
-	int op = '\n'; // variável de opção para o menu
+	int op; // variável de opção para o menu
 
 	init(); //inicializa as estruturas de dados a zero
-	//system("chcp 1252>null"); //CODEPAGE PT
 
 	// MENU PRINCIPAL
 	do{
@@ -218,10 +238,8 @@ int menu_principal()
         printf("| 4.Carregar/Salvar  |\n");
         printf("| 0.Sair             |\n");
         printf("\n");
-
-        scanf("%d", &op); //op=getchar(); // ou getch(); em windows
-
-        //system("clear"); // ou system("cls"); em windows
+        scanf("%d", &op);
+        fflush(stdin);
         switch (op) {
             case 1:
                     menu_1(); // chama função menu Inserir/Editar
@@ -237,21 +255,13 @@ int menu_principal()
                     menu_4();
                     break;
             case 0:
-
-            return;
-
+                    break;
         }
-
-
-	} while (1);
-
-
+	} while (op!=0);
 }
 
 int main()
 {
-
     menu_principal();
-
 }
 // FIM DO PROGRAMA #############################################################

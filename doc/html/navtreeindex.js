@@ -1,0 +1,21 @@
+var NAVTREEINDEX =
+{
+"index.html":[],
+"annotated.html":[0,0],
+"structequipa.html":[0,0,0],
+"structjogador.html":[0,0,1],
+"structresultado.html":[0,0,2],
+"classes.html":[0,1],
+"functions.html":[0,2,0],
+"functions_vars.html":[0,2,1],
+"files.html":[1,0],
+"afm_8c.html":[1,0,0],
+"menu__1_8c.html":[1,0,1],
+"menu__2_8c.html":[1,0,2],
+"menu__3_8c.html":[1,0,3],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"globals_vars.html":[1,1,2],
+"globals_type.html":[1,1,3],
+"globals_defs.html":[1,1,4]
+};

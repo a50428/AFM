@@ -1,0 +1,249 @@
+\hypertarget{afm_8c}{\section{afm.\-c \-File \-Reference}
+\label{afm_8c}\index{afm.\-c@{afm.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include \char`\"{}menu\-\_\-1.\-c\char`\"{}}\*
+{\ttfamily \#include \char`\"{}menu\-\_\-2.\-c\char`\"{}}\*
+{\ttfamily \#include \char`\"{}menu\-\_\-3.\-c\char`\"{}}\*
+\-Include dependency graph for afm.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{afm_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structjogador}{jogador}
+\item 
+struct \hyperlink{structequipa}{equipa}
+\item 
+struct \hyperlink{structresultado}{resultado}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{afm_8c_ad59246fadffe0205c1ecfcd147c407f6}{\-J}~101
+\item 
+\#define \hyperlink{afm_8c_a07484107e6d9fdf38b53edf631d6511d}{\-E}~101
+\item 
+\#define \hyperlink{afm_8c_a5c71a5e59a53413cd6c270266d63b031}{\-R}~101
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structjogador}{jogador} \hyperlink{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}{listajog} \mbox{[}\hyperlink{afm_8c_ad59246fadffe0205c1ecfcd147c407f6}{\-J}\mbox{]}
+\item 
+typedef \hyperlink{structequipa}{equipa} \hyperlink{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}{listaequip} \mbox{[}\hyperlink{afm_8c_a07484107e6d9fdf38b53edf631d6511d}{\-E}\mbox{]}
+\item 
+typedef \hyperlink{structresultado}{resultado} \hyperlink{afm_8c_a853a68bc47b21781135b11b5ea3834b5}{listaresult} \mbox{[}\hyperlink{afm_8c_a5c71a5e59a53413cd6c270266d63b031}{\-R}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{afm_8c_ac92a673771db92e7156490091aef7135}{init} (void)
+\item 
+void \hyperlink{afm_8c_a38330109d2df7a4d35db98177d2a8803}{salva\-\_\-dados} (\hyperlink{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}{listajog} lj, \hyperlink{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}{listaequip} le, \hyperlink{afm_8c_a853a68bc47b21781135b11b5ea3834b5}{listaresult} lr)
+\item 
+int \hyperlink{afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4}{carrega\-\_\-dados} (\hyperlink{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}{listajog} $\ast$lj, \hyperlink{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}{listaequip} $\ast$le, \hyperlink{afm_8c_a853a68bc47b21781135b11b5ea3834b5}{listaresult} $\ast$lr)
+\item 
+int \hyperlink{afm_8c_ada052e848d814b4f697b1b0c85cf223e}{menu\-\_\-4} (void)
+\item 
+int \hyperlink{afm_8c_a82bec0e1cbde8c596c089e22096c2092}{menu\-\_\-principal} ()
+\item 
+int \hyperlink{afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}{listajog} \hyperlink{afm_8c_a40956055646314d2da3182e784341350}{jog}
+\item 
+\hyperlink{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}{listaequip} \hyperlink{afm_8c_a28ff74d6373f9761911e9257665896f6}{equip}
+\item 
+\hyperlink{afm_8c_a853a68bc47b21781135b11b5ea3834b5}{listaresult} \hyperlink{afm_8c_afa802f4ee9580ff2c5a626ae8828da82}{result}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{afm_8c_a07484107e6d9fdf38b53edf631d6511d}{\index{afm.\-c@{afm.\-c}!\-E@{\-E}}
+\index{\-E@{\-E}!afm.c@{afm.\-c}}
+\subsubsection[{\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-E}~101}}\label{afm_8c_a07484107e6d9fdf38b53edf631d6511d}
+\hypertarget{afm_8c_ad59246fadffe0205c1ecfcd147c407f6}{\index{afm.\-c@{afm.\-c}!\-J@{\-J}}
+\index{\-J@{\-J}!afm.c@{afm.\-c}}
+\subsubsection[{\-J}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-J}~101}}\label{afm_8c_ad59246fadffe0205c1ecfcd147c407f6}
+\hypertarget{afm_8c_a5c71a5e59a53413cd6c270266d63b031}{\index{afm.\-c@{afm.\-c}!\-R@{\-R}}
+\index{\-R@{\-R}!afm.c@{afm.\-c}}
+\subsubsection[{\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-R}~101}}\label{afm_8c_a5c71a5e59a53413cd6c270266d63b031}
+
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}{\index{afm.\-c@{afm.\-c}!listaequip@{listaequip}}
+\index{listaequip@{listaequip}!afm.c@{afm.\-c}}
+\subsubsection[{listaequip}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf equipa} {\bf listaequip}\mbox{[}{\bf \-E}\mbox{]}}}\label{afm_8c_a83e0d47f8dc3c578e4267d2f9d2fa512}
+\hypertarget{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}{\index{afm.\-c@{afm.\-c}!listajog@{listajog}}
+\index{listajog@{listajog}!afm.c@{afm.\-c}}
+\subsubsection[{listajog}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jogador} {\bf listajog}\mbox{[}{\bf \-J}\mbox{]}}}\label{afm_8c_a6d507f153d5578a0466a1d79dcaa3e62}
+\hypertarget{afm_8c_a853a68bc47b21781135b11b5ea3834b5}{\index{afm.\-c@{afm.\-c}!listaresult@{listaresult}}
+\index{listaresult@{listaresult}!afm.c@{afm.\-c}}
+\subsubsection[{listaresult}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf resultado} {\bf listaresult}\mbox{[}{\bf \-R}\mbox{]}}}\label{afm_8c_a853a68bc47b21781135b11b5ea3834b5}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4}{\index{afm.\-c@{afm.\-c}!carrega\-\_\-dados@{carrega\-\_\-dados}}
+\index{carrega\-\_\-dados@{carrega\-\_\-dados}!afm.c@{afm.\-c}}
+\subsubsection[{carrega\-\_\-dados}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf carrega\-\_\-dados} (
+\begin{DoxyParamCaption}
+\item[{{\bf listajog} $\ast$}]{lj, }
+\item[{{\bf listaequip} $\ast$}]{le, }
+\item[{{\bf listaresult} $\ast$}]{lr}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{afm_8c_ac92a673771db92e7156490091aef7135}{\index{afm.\-c@{afm.\-c}!init@{init}}
+\index{init@{init}!afm.c@{afm.\-c}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_ac92a673771db92e7156490091aef7135}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{afm_8c_ac92a673771db92e7156490091aef7135_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{afm.\-c@{afm.\-c}!main@{main}}
+\index{main@{main}!afm.c@{afm.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{afm_8c_ada052e848d814b4f697b1b0c85cf223e}{\index{afm.\-c@{afm.\-c}!menu\-\_\-4@{menu\-\_\-4}}
+\index{menu\-\_\-4@{menu\-\_\-4}!afm.c@{afm.\-c}}
+\subsubsection[{menu\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf menu\-\_\-4} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_ada052e848d814b4f697b1b0c85cf223e}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{afm_8c_ada052e848d814b4f697b1b0c85cf223e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{afm_8c_a82bec0e1cbde8c596c089e22096c2092}{\index{afm.\-c@{afm.\-c}!menu\-\_\-principal@{menu\-\_\-principal}}
+\index{menu\-\_\-principal@{menu\-\_\-principal}!afm.c@{afm.\-c}}
+\subsubsection[{menu\-\_\-principal}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf menu\-\_\-principal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_a82bec0e1cbde8c596c089e22096c2092}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{afm_8c_a38330109d2df7a4d35db98177d2a8803}{\index{afm.\-c@{afm.\-c}!salva\-\_\-dados@{salva\-\_\-dados}}
+\index{salva\-\_\-dados@{salva\-\_\-dados}!afm.c@{afm.\-c}}
+\subsubsection[{salva\-\_\-dados}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf salva\-\_\-dados} (
+\begin{DoxyParamCaption}
+\item[{{\bf listajog}}]{lj, }
+\item[{{\bf listaequip}}]{le, }
+\item[{{\bf listaresult}}]{lr}
+\end{DoxyParamCaption}
+)}}\label{afm_8c_a38330109d2df7a4d35db98177d2a8803}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{afm_8c_a28ff74d6373f9761911e9257665896f6}{\index{afm.\-c@{afm.\-c}!equip@{equip}}
+\index{equip@{equip}!afm.c@{afm.\-c}}
+\subsubsection[{equip}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listaequip} {\bf equip}}}\label{afm_8c_a28ff74d6373f9761911e9257665896f6}
+\hypertarget{afm_8c_a40956055646314d2da3182e784341350}{\index{afm.\-c@{afm.\-c}!jog@{jog}}
+\index{jog@{jog}!afm.c@{afm.\-c}}
+\subsubsection[{jog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listajog} {\bf jog}}}\label{afm_8c_a40956055646314d2da3182e784341350}
+\hypertarget{afm_8c_afa802f4ee9580ff2c5a626ae8828da82}{\index{afm.\-c@{afm.\-c}!result@{result}}
+\index{result@{result}!afm.c@{afm.\-c}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listaresult} {\bf result}}}\label{afm_8c_afa802f4ee9580ff2c5a626ae8828da82}
