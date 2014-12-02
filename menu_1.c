@@ -256,7 +256,7 @@ int inserir_equip(void)
             }
        } while (op!=2 && equip[i].lista[j]<26);
        i++;
-       //while (equip[i].id>0) i++; // vai para o proximo indice não ativo (equip[i].ativo=0)
+       while (equip[i].id>0) i++; // vai para o proximo indice não ativo (equip[i].ativo=0)
        printf("\nDeseja Inserir outra Equipa? [1] SIM / [2] NÃO\n");
        scanf("%d", &op);
    	}while (op == 1 && op<E);
@@ -420,18 +420,18 @@ int tranferir_jog(void)
                 if (equip[x].lista[k]==id_jog) equip[x].lista[k]=0; // quando encontrar coloca a zero.
             }
         listar_equip(); // lista equipas
-        printf("\nQual o ID da equipa de destino? [-1] Sem Equipa - [0] Sair: ");
+        printf("\nQual o ID da equipa de destino? [0] Sem Equipa - [-1] Sair: ");
         scanf("%d", &id_eq);
-        if (id_eq==0) break;
-        if (id_eq==-1) jog[id_jog].eq=0; break;
-        jog[id_jog].eq=id_eq;
+        if (id_eq==-1) break;
+        if (id_eq==0) jog[id_jog].eq=0;
+        else jog[id_jog].eq=id_eq;
         while (equip[id_eq].lista[j]!=0) j++; // avança até encontrar vazio...
         equip[id_eq].lista[j]=id_jog; j++; // regista id jogador no array lista de jogadores max 25
         printf("\n\nTranferencia efectuada com sucesso!");
         printf("\n\nDeseja tranferir outro Jogador? [1] SIM / [2] NÃO\n");
         scanf("%d", &op);
 
-    }while (op == 1 || j<26); //max 25
+    }while (op == 1 && j<26); //max 25
 
    menu_1();
 
@@ -555,7 +555,7 @@ int registar_jogos(void)
 
 }
 
-// ! menu_principal
+// ! eq_list
 /* *
 * função de testes para listar todas as equipas e jogadores por equipa
 * \ param void
@@ -633,9 +633,8 @@ int menu_1(void)
         case 7:
 				ver_jogos(); // chama função ver jogos
 				break;
-        // temp
 		case 8:
-				eq_list(); // lista equipas e resultados (testes)
+				eq_list(); // lista equipas e resultados (testes "easter egg")
 				break;
 		case 0:
 				return; //regressa ao menu principal "afm.c"
