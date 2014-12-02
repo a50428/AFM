@@ -1,137 +1,137 @@
-\indexentry{equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!ativo@{ativo}|hyperpage}{3}
-\indexentry{ativo@{ativo}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!derrotas@{derrotas}|hyperpage}{3}
-\indexentry{derrotas@{derrotas}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!empates@{empates}|hyperpage}{3}
-\indexentry{empates@{empates}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!id@{id}|hyperpage}{3}
-\indexentry{id@{id}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!lista@{lista}|hyperpage}{3}
-\indexentry{lista@{lista}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!nome@{nome}|hyperpage}{3}
-\indexentry{nome@{nome}!equipa@{equipa}|hyperpage}{3}
-\indexentry{equipa@{equipa}!vitorias@{vitorias}|hyperpage}{3}
-\indexentry{vitorias@{vitorias}!equipa@{equipa}|hyperpage}{3}
-\indexentry{jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada@{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}|hyperpage}{4}
-\indexentry{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada@{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!ativo@{ativo}|hyperpage}{4}
-\indexentry{ativo@{ativo}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!eq@{eq}|hyperpage}{4}
-\indexentry{eq@{eq}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!golos@{golos}|hyperpage}{4}
-\indexentry{golos@{golos}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!idade@{idade}|hyperpage}{4}
-\indexentry{idade@{idade}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!morada@{morada}|hyperpage}{4}
-\indexentry{morada@{morada}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!nome@{nome}|hyperpage}{4}
-\indexentry{nome@{nome}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!num\discretionary {-}{}{}\_\discretionary {-}{}{}cc@{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}|hyperpage}{4}
-\indexentry{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc@{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!pos@{pos}|hyperpage}{4}
-\indexentry{pos@{pos}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!pos\discretionary {-}{}{}\_\discretionary {-}{}{}list@{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}|hyperpage}{4}
-\indexentry{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list@{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}!jogador@{jogador}|hyperpage}{4}
-\indexentry{jogador@{jogador}!telefone@{telefone}|hyperpage}{4}
-\indexentry{telefone@{telefone}!jogador@{jogador}|hyperpage}{4}
-\indexentry{resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!ativo@{ativo}|hyperpage}{5}
-\indexentry{ativo@{ativo}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!data@{data}|hyperpage}{5}
-\indexentry{data@{data}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{5}
-\indexentry{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}|hyperpage}{5}
-\indexentry{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!golos\discretionary {-}{}{}\_\discretionary {-}{}{}a@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{5}
-\indexentry{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!golos\discretionary {-}{}{}\_\discretionary {-}{}{}b@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}|hyperpage}{5}
-\indexentry{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!id@{id}|hyperpage}{5}
-\indexentry{id@{id}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!local@{local}|hyperpage}{5}
-\indexentry{local@{local}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!marcadores@{marcadores}|hyperpage}{5}
-\indexentry{marcadores@{marcadores}!resultado@{resultado}|hyperpage}{5}
-\indexentry{resultado@{resultado}!marcados@{marcados}|hyperpage}{5}
-\indexentry{marcados@{marcados}!resultado@{resultado}|hyperpage}{5}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}|hyperpage}{6}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}E@{\discretionary {-}{}{}E}|hyperpage}{7}
-\indexentry{\discretionary {-}{}{}E@{\discretionary {-}{}{}E}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}J@{\discretionary {-}{}{}J}|hyperpage}{7}
-\indexentry{\discretionary {-}{}{}J@{\discretionary {-}{}{}J}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}R@{\discretionary {-}{}{}R}|hyperpage}{7}
-\indexentry{\discretionary {-}{}{}R@{\discretionary {-}{}{}R}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listaequip@{listaequip}|hyperpage}{7}
-\indexentry{listaequip@{listaequip}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listajog@{listajog}|hyperpage}{7}
-\indexentry{listajog@{listajog}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listaresult@{listaresult}|hyperpage}{7}
-\indexentry{listaresult@{listaresult}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}|hyperpage}{7}
-\indexentry{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{7}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!init@{init}|hyperpage}{8}
-\indexentry{init@{init}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{8}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!main@{main}|hyperpage}{8}
-\indexentry{main@{main}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{8}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}4@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}|hyperpage}{9}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{9}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}|hyperpage}{10}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{10}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}|hyperpage}{12}
-\indexentry{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!equip@{equip}|hyperpage}{12}
-\indexentry{equip@{equip}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!jog@{jog}|hyperpage}{12}
-\indexentry{jog@{jog}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
-\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!result@{result}|hyperpage}{12}
-\indexentry{result@{result}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{13}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{14}
-\indexentry{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{14}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{15}
-\indexentry{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{15}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!eq\discretionary {-}{}{}\_\discretionary {-}{}{}list@{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}|hyperpage}{17}
-\indexentry{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list@{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{17}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{19}
-\indexentry{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{19}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{21}
-\indexentry{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{21}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{23}
-\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{23}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{24}
-\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{24}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{25}
-\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{25}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}|hyperpage}{26}
-\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{26}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}1@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}|hyperpage}{27}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{27}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}|hyperpage}{29}
-\indexentry{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{29}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{31}
-\indexentry{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{31}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}|hyperpage}{33}
-\indexentry{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{33}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{35}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{36}
-\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{36}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}|hyperpage}{37}
-\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{37}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}|hyperpage}{37}
-\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{37}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}2@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}|hyperpage}{38}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{38}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!result\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{39}
-\indexentry{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{39}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{40}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!medgolos@{medgolos}|hyperpage}{40}
-\indexentry{medgolos@{medgolos}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{40}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!medidades@{medidades}|hyperpage}{41}
-\indexentry{medidades@{medidades}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{41}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}3@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}|hyperpage}{41}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{41}
-\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!mmarcador@{mmarcador}|hyperpage}{42}
-\indexentry{mmarcador@{mmarcador}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{42}
+\indexentry{equipa@{equipa}|hyperpage}{5}
+\indexentry{equipa@{equipa}!ativo@{ativo}|hyperpage}{5}
+\indexentry{ativo@{ativo}!equipa@{equipa}|hyperpage}{5}
+\indexentry{equipa@{equipa}!derrotas@{derrotas}|hyperpage}{5}
+\indexentry{derrotas@{derrotas}!equipa@{equipa}|hyperpage}{5}
+\indexentry{equipa@{equipa}!empates@{empates}|hyperpage}{5}
+\indexentry{empates@{empates}!equipa@{equipa}|hyperpage}{5}
+\indexentry{equipa@{equipa}!id@{id}|hyperpage}{5}
+\indexentry{id@{id}!equipa@{equipa}|hyperpage}{5}
+\indexentry{equipa@{equipa}!lista@{lista}|hyperpage}{6}
+\indexentry{lista@{lista}!equipa@{equipa}|hyperpage}{6}
+\indexentry{equipa@{equipa}!nome@{nome}|hyperpage}{6}
+\indexentry{nome@{nome}!equipa@{equipa}|hyperpage}{6}
+\indexentry{equipa@{equipa}!vitorias@{vitorias}|hyperpage}{6}
+\indexentry{vitorias@{vitorias}!equipa@{equipa}|hyperpage}{6}
+\indexentry{jogador@{jogador}|hyperpage}{6}
+\indexentry{jogador@{jogador}!ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada@{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}|hyperpage}{7}
+\indexentry{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada@{ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!ativo@{ativo}|hyperpage}{7}
+\indexentry{ativo@{ativo}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!eq@{eq}|hyperpage}{7}
+\indexentry{eq@{eq}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!golos@{golos}|hyperpage}{7}
+\indexentry{golos@{golos}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!idade@{idade}|hyperpage}{7}
+\indexentry{idade@{idade}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!morada@{morada}|hyperpage}{7}
+\indexentry{morada@{morada}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!nome@{nome}|hyperpage}{7}
+\indexentry{nome@{nome}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!num\discretionary {-}{}{}\_\discretionary {-}{}{}cc@{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}|hyperpage}{7}
+\indexentry{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc@{num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!pos@{pos}|hyperpage}{7}
+\indexentry{pos@{pos}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!pos\discretionary {-}{}{}\_\discretionary {-}{}{}list@{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list@{pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}!jogador@{jogador}|hyperpage}{7}
+\indexentry{jogador@{jogador}!telefone@{telefone}|hyperpage}{7}
+\indexentry{telefone@{telefone}!jogador@{jogador}|hyperpage}{7}
+\indexentry{resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!ativo@{ativo}|hyperpage}{8}
+\indexentry{ativo@{ativo}!resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!data@{data}|hyperpage}{8}
+\indexentry{data@{data}!resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{8}
+\indexentry{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}!resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}|hyperpage}{8}
+\indexentry{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b@{equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}!resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!golos\discretionary {-}{}{}\_\discretionary {-}{}{}a@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{8}
+\indexentry{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}!resultado@{resultado}|hyperpage}{8}
+\indexentry{resultado@{resultado}!golos\discretionary {-}{}{}\_\discretionary {-}{}{}b@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}|hyperpage}{9}
+\indexentry{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b@{golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}!resultado@{resultado}|hyperpage}{9}
+\indexentry{resultado@{resultado}!id@{id}|hyperpage}{9}
+\indexentry{id@{id}!resultado@{resultado}|hyperpage}{9}
+\indexentry{resultado@{resultado}!local@{local}|hyperpage}{9}
+\indexentry{local@{local}!resultado@{resultado}|hyperpage}{9}
+\indexentry{resultado@{resultado}!marcadores@{marcadores}|hyperpage}{9}
+\indexentry{marcadores@{marcadores}!resultado@{resultado}|hyperpage}{9}
+\indexentry{resultado@{resultado}!marcados@{marcados}|hyperpage}{9}
+\indexentry{marcados@{marcados}!resultado@{resultado}|hyperpage}{9}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}|hyperpage}{11}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}E@{\discretionary {-}{}{}E}|hyperpage}{12}
+\indexentry{\discretionary {-}{}{}E@{\discretionary {-}{}{}E}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}J@{\discretionary {-}{}{}J}|hyperpage}{12}
+\indexentry{\discretionary {-}{}{}J@{\discretionary {-}{}{}J}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!\discretionary {-}{}{}R@{\discretionary {-}{}{}R}|hyperpage}{12}
+\indexentry{\discretionary {-}{}{}R@{\discretionary {-}{}{}R}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{12}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listaequip@{listaequip}|hyperpage}{13}
+\indexentry{listaequip@{listaequip}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{13}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listajog@{listajog}|hyperpage}{13}
+\indexentry{listajog@{listajog}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{13}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!listaresult@{listaresult}|hyperpage}{13}
+\indexentry{listaresult@{listaresult}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{13}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}|hyperpage}{13}
+\indexentry{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{13}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!init@{init}|hyperpage}{13}
+\indexentry{init@{init}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{13}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!main@{main}|hyperpage}{14}
+\indexentry{main@{main}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{14}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}4@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}|hyperpage}{14}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{14}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}|hyperpage}{15}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{15}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}|hyperpage}{17}
+\indexentry{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados@{salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{17}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!equip@{equip}|hyperpage}{17}
+\indexentry{equip@{equip}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{17}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!jog@{jog}|hyperpage}{17}
+\indexentry{jog@{jog}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{17}
+\indexentry{afm.\discretionary {-}{}{}c@{afm.\discretionary {-}{}{}c}!result@{result}|hyperpage}{17}
+\indexentry{result@{result}!afm.c@{afm.\discretionary {-}{}{}c}|hyperpage}{17}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{18}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{19}
+\indexentry{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{19}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{20}
+\indexentry{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{20}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!eq\discretionary {-}{}{}\_\discretionary {-}{}{}list@{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}|hyperpage}{22}
+\indexentry{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list@{eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{22}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{24}
+\indexentry{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{24}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{26}
+\indexentry{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{26}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{28}
+\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{28}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{29}
+\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{29}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}|hyperpage}{30}
+\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{30}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}|hyperpage}{31}
+\indexentry{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx@{listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{31}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}1@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}|hyperpage}{32}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{32}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}|hyperpage}{34}
+\indexentry{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{34}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}|hyperpage}{36}
+\indexentry{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog@{tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{36}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}!ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}|hyperpage}{38}
+\indexentry{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos@{ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}!menu_1.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c}|hyperpage}{38}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{40}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{41}
+\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{41}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}|hyperpage}{42}
+\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{42}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}|hyperpage}{42}
+\indexentry{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos@{jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{42}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}2@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}|hyperpage}{43}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{43}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}!result\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}|hyperpage}{44}
+\indexentry{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip@{result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}!menu_2.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c}|hyperpage}{44}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{45}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!medgolos@{medgolos}|hyperpage}{45}
+\indexentry{medgolos@{medgolos}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{45}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!medidades@{medidades}|hyperpage}{46}
+\indexentry{medidades@{medidades}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{46}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!menu\discretionary {-}{}{}\_\discretionary {-}{}{}3@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}|hyperpage}{46}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{46}
+\indexentry{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}!mmarcador@{mmarcador}|hyperpage}{47}
+\indexentry{mmarcador@{mmarcador}!menu_3.c@{menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c}|hyperpage}{47}

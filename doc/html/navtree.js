@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "AFM", "index.html", [
+  [ "Projeto Final TPPI", "index.html", [
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],

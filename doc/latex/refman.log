@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.4)  1 DEC 2014 14:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.4)  2 DEC 2014 11:31
 entering extended mode
  %&-line parsing enabled.
 **refman.tex
@@ -6,10 +6,10 @@ entering extended mode
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -809,33 +809,10 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks25
 \verbatim@in@stream=\read1
 )
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 34.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 35.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 36.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 40.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 41.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 42.
-
 \tmplength=\skip100
 \xrefbox=\box60
 \xreflength=\skip101
+
 (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -927,12 +904,15 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 51.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 53.
+(Font)              scaled to size 10.79993pt on input line 51.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 55.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
@@ -988,7 +968,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
  [1
 
-
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 59.
@@ -998,7 +977,9 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [3]
+ [3] [4
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 63.
 
 Chapter 1.
@@ -1019,10 +1000,11 @@ LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
 
+] [2
 
 ]
 Chapter 2.
-(./files.tex) [2
+(./files.tex) [3] [4
 
 ]
 Chapter 3.
@@ -1040,11 +1022,11 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 26.
-)
-(./structjogador.tex [3
+(Font)              scaled to size 8.99994pt on input line 33.
 
-]) (./structresultado.tex [4]) [5]
+[5]) (./structjogador.tex [6] [7]) (./structresultado.tex [8]) [9] [10
+
+]
 Chapter 4.
 (./afm_8c.tex
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 4.
@@ -1054,76 +1036,74 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 pdfTeX warning: pdflatex (file ./afm_8c__incl.pdf): PDF inclusion: found PDF ve
 rsion <1.5>, but at most version <1.4> allowed
-<afm_8c__incl.pdf, id=564, 333.245pt x 218.8175pt>
+<afm_8c__incl.pdf, id=606, 333.245pt x 218.8175pt>
 File: afm_8c__incl.pdf Graphic file (type pdf)
  <use afm_8c__incl.pdf>
-[6
-
- <./afm_8c__incl.pdf>]
+[11 <./afm_8c__incl.pdf>] [12]
 LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
-(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 104.
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 127.
 
 LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 104.
+(Font)              scaled to size 8.99994pt on input line 127.
 
 
 pdfTeX warning: pdflatex (file ./afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgra
 ph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allo
 wed
 
-<afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf, id=613, 441.65pt x 102.3
+<afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf, id=679, 441.65pt x 102.3
 825pt>
 File: afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf Graphic file (type p
 df)
  <use afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 111--113
+Overfull \hbox (5.0pt too wide) in paragraph at lines 137--139
  [] 
  []
 
-[7]
+
 
 pdfTeX warning: pdflatex (file ./afm_8c_ac92a673771db92e7156490091aef7135_icgra
 ph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allo
 wed
 
-<afm_8c_ac92a673771db92e7156490091aef7135_icgraph.pdf, id=639, 303.1325pt x 102
+<afm_8c_ac92a673771db92e7156490091aef7135_icgraph.pdf, id=681, 303.1325pt x 102
 .3825pt>
 File: afm_8c_ac92a673771db92e7156490091aef7135_icgraph.pdf Graphic file (type p
 df)
- <use afm_8c_ac92a673771db92e7156490091aef7135_icgraph.pdf>
+ <use afm_8c_ac92a673771db92e7156490091aef7135_icgraph.pdf> [13 <./afm_8c_a04ad
+6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf> <./afm_8c_ac92a673771db92e7156490091a
+ef7135_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgrap
 h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
 ed
 
-<afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=641, 544.0325pt x 744.
+<afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=703, 544.0325pt x 744.
 7825pt>
 File: afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file (type pd
 f)
  <use afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 149--151
+Overfull \hbox (5.0pt too wide) in paragraph at lines 182--184
  [] 
  []
 
-[8 <./afm_8c_a04ad6f0f09c909906b3f993c9bd7b6d4_icgraph.pdf> <./afm_8c_ac92a6737
-71db92e7156490091aef7135_icgraph.pdf>]
+[14 <./afm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgrap
 h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
 ed
 
-<afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf, id=662, 248.93pt x 142.53
+<afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf, id=716, 248.93pt x 142.53
 25pt>
 File: afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf Graphic file (type pd
 f)
- <use afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf> [9 <./afm_8c_ae66f6b
-31b5ad750f1fe042a706a4e3d4_cgraph.pdf>]
+ <use afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf>
 
 pdfTeX warning: pdflatex (file ./afm_8c_ada052e848d814b4f697b1b0c85cf223e_icgra
 ph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allo
 wed
 
-<afm_8c_ada052e848d814b4f697b1b0c85cf223e_icgraph.pdf, id=676, 325.215pt x 102.
+<afm_8c_ada052e848d814b4f697b1b0c85cf223e_icgraph.pdf, id=718, 325.215pt x 102.
 3825pt>
 File: afm_8c_ada052e848d814b4f697b1b0c85cf223e_icgraph.pdf Graphic file (type p
 df)
@@ -1133,42 +1113,44 @@ pdfTeX warning: pdflatex (file ./afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgrap
 h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
 ed
 
-<afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf, id=678, 469.755pt x 744.7
+<afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf, id=720, 469.755pt x 744.7
 825pt>
 File: afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf Graphic file (type pd
 f)
  <use afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf>
-Overfull \hbox (1.91081pt too wide) in paragraph at lines 199--201
+Overfull \hbox (1.91081pt too wide) in paragraph at lines 238--240
  [] 
  []
 
-[10 <./afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf> <./afm_8c_ada052e84
-8d814b4f697b1b0c85cf223e_icgraph.pdf>]
-Overfull \vbox (10.75333pt too high) has occurred while \output is active []
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11 <./afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf>]
+ [15 <./afm_8c_ada052e848d814b4f697b1b0c85cf223e_cgraph.pdf> <./afm_8c_ada052e8
+48d814b4f697b1b0c85cf223e_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgra
 ph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allo
 wed
 
-<afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgraph.pdf, id=709, 236.885pt x 102.
+<afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgraph.pdf, id=740, 236.885pt x 102.
 3825pt>
 File: afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgraph.pdf Graphic file (type p
 df)
  <use afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgraph.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./afm_8c_a82bec0e1cbde8c596c089e22096c2092_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./afm_8c_a38330109d2df7a4d35db98177d2a8803_icgra
 ph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allo
 wed
 
-<afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph.pdf, id=711, 433.62pt x 102.3
+<afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph.pdf, id=753, 433.62pt x 102.3
 825pt>
 File: afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph.pdf Graphic file (type p
 df)
  <use afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 232--234
+Overfull \hbox (5.0pt too wide) in paragraph at lines 273--275
  [] 
  []
 
@@ -1176,30 +1158,30 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 232--234
 
 pdfTeX warning: pdflatex (file ./menu__1_8c__incl.pdf): PDF inclusion: found PD
 F version <1.5>, but at most version <1.4> allowed
-<menu__1_8c__incl.pdf, id=713, 258.9675pt x 160.6pt>
+<menu__1_8c__incl.pdf, id=755, 258.9675pt x 160.6pt>
 File: menu__1_8c__incl.pdf Graphic file (type pdf)
 
-<use menu__1_8c__incl.pdf> [12 <./afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgr
+<use menu__1_8c__incl.pdf> [17 <./afm_8c_a82bec0e1cbde8c596c089e22096c2092_icgr
 aph.pdf> <./afm_8c_a38330109d2df7a4d35db98177d2a8803_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c__dep__incl.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<menu__1_8c__dep__incl.pdf, id=733, 138.5175pt x 160.6pt>
+<menu__1_8c__dep__incl.pdf, id=775, 138.5175pt x 160.6pt>
 File: menu__1_8c__dep__incl.pdf Graphic file (type pdf)
 
-<use menu__1_8c__dep__incl.pdf> [13 <./menu__1_8c__incl.pdf> <./menu__1_8c__dep
+<use menu__1_8c__dep__incl.pdf> [18 <./menu__1_8c__incl.pdf> <./menu__1_8c__dep
 __incl.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf, id=775, 455.7025pt x 
+<menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf, id=817, 455.7025pt x 
 368.37625pt>
 File: menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 68--70
+Overfull \hbox (5.0pt too wide) in paragraph at lines 69--71
  [] 
  []
 
@@ -1209,7 +1191,7 @@ pdfTeX warning: pdflatex (file ./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_icgraph.pdf, id=777, 431.6125pt x
+<menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_icgraph.pdf, id=819, 431.6125pt x
  383.4325pt>
 File: menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1218,316 +1200,380 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 80--82
  [] 
  []
 
-[14 <./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf, id=795, 445.665pt x 3
+<menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf, id=838, 445.665pt x 3
 63.3575pt>
 File: menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 99--101
+Overfull \hbox (5.0pt too wide) in paragraph at lines 102--104
  [] 
  []
 
-[15 <./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./menu__1_8c_abc97de2adada9eab321f6f9c2cc90e43_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf, id=809, 421.575pt x 
+<menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf, id=851, 421.575pt x 
 383.4325pt>
 File: menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 111--113
+Overfull \hbox (5.0pt too wide) in paragraph at lines 113--115
  [] 
  []
 
-[16 <./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf, id=822, 431.6125pt x 
+<menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf, id=864, 431.6125pt x 
 343.2825pt>
 File: menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 130--132
+Overfull \hbox (5.0pt too wide) in paragraph at lines 135--137
  [] 
  []
 
-[17 <./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./menu__1_8c_abab5e0b81eeee3f4df63e9630d745197_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf, id=835, 407.5225pt x
+<menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf, id=877, 407.5225pt x
  383.4325pt>
 File: menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 142--144
+Overfull \hbox (5.0pt too wide) in paragraph at lines 146--148
  [] 
  []
 
-[18 <./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf, id=848, 467.7475pt x 
+<menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf, id=890, 467.7475pt x 
 343.2825pt>
 File: menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 161--163
+Overfull \hbox (5.0pt too wide) in paragraph at lines 168--170
  [] 
  []
 
-[19 <./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./menu__1_8c_aff54bdcbbe50b0b052faa4114da1652c_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf, id=861, 433.62pt x 3
+<menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf, id=903, 433.62pt x 3
 83.4325pt>
 File: menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 173--175
+Overfull \hbox (5.0pt too wide) in paragraph at lines 179--181
  [] 
  []
 
-[20 <./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a279cf94785a870a029c11673d7c914cc_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf, id=874, 447.6725pt x 
+<menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf, id=917, 447.6725pt x 
 343.2825pt>
 File: menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 192--194
+Overfull \hbox (5.0pt too wide) in paragraph at lines 201--203
  [] 
  []
 
-[21 <./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./menu__1_8c_ac915fcedc2b5c785033411db7ff8f131_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a279cf94785a870a029c11673d7c914cc_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf, id=888, 423.5825pt x
+<menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf, id=930, 423.5825pt x
  383.4325pt>
 File: menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 204--206
+Overfull \hbox (5.0pt too wide) in paragraph at lines 212--214
  [] 
  []
 
-[22 <./menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./menu__1_8c_a279cf94785a870a029c11673d7c914cc_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf, id=901, 533.995pt x 
+<menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf, id=943, 533.995pt x 
 383.4325pt>
 File: menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 223--225
+Overfull \hbox (5.0pt too wide) in paragraph at lines 235--237
  [] 
  []
 
-[23 <./menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./menu__1_8c_a279cf94785a870a029c11673d7c914cc_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf, id=914, 513.92pt x 3
+<menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf, id=956, 513.92pt x 3
 83.4325pt>
 File: menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 242--244
+Overfull \hbox (5.0pt too wide) in paragraph at lines 257--259
  [] 
  []
 
-[24 <./menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./menu__1_8c_aea43b6ed43815e3ffa2129371ef40550_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf, id=927, 542.025pt x 
+<menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf, id=969, 542.025pt x 
 383.4325pt>
 File: menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 261--263
+Overfull \hbox (5.0pt too wide) in paragraph at lines 279--281
  [] 
  []
 
-[25 <./menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./menu__1_8c_a85359f7620e4fa017a32fc968f9e9f45_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_aba5526986ec5f66609afec4628da403c_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf, id=940, 531.9875pt x
+<menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf, id=982, 531.9875pt x
  383.4325pt>
 File: menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 280--282
+Overfull \hbox (5.0pt too wide) in paragraph at lines 301--303
  [] 
  []
 
-[26 <./menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./menu__1_8c_aadb0c44c54fce0aaec87a758415aaff6_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf, id=953, 349.305pt x 3
+<menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf, id=996, 349.305pt x 3
 83.4325pt>
 File: menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf>
-Overfull \hbox (3.0pt too wide) in paragraph at lines 299--301
+Overfull \hbox (3.0pt too wide) in paragraph at lines 323--325
  [] 
  []
 
-[27 <./menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./menu__1_8c_aba5526986ec5f66609afec4628da403c_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf, id=967, 325.215pt x 
-423.5825pt>
+<menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf, id=1009, 325.215pt x
+ 423.5825pt>
 File: menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf>
-[28 <./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_ac45796417ec48606403b4ac133e7335a_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf, id=980, 471.7625pt x 
-360.34625pt>
+<menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf, id=1022, 471.7625pt x
+ 360.34625pt>
 File: menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 330--332
+Overfull \hbox (5.0pt too wide) in paragraph at lines 356--358
  [] 
  []
 
-[29 <./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <./menu__1_8c_a4a21ce3fd488e42dedf8b6e3502c7718_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_ac45796417ec48606403b4ac133e7335a_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf, id=993, 439.6425pt x
- 383.4325pt>
+<menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf, id=1035, 439.6425pt 
+x 383.4325pt>
 File: menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 342--344
+Overfull \hbox (5.0pt too wide) in paragraph at lines 367--369
  [] 
  []
 
-[30 <./menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./menu__1_8c_ac45796417ec48606403b4ac133e7335a_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf, id=1006, 453.695pt x 
+<menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf, id=1048, 453.695pt x 
 379.4175pt>
 File: menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 361--363
+Overfull \hbox (5.0pt too wide) in paragraph at lines 389--391
  [] 
  []
 
-[31 <./menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36 <./menu__1_8c_ac45796417ec48606403b4ac133e7335a_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf, id=1019, 429.605pt x
+<menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf, id=1061, 429.605pt x
  383.4325pt>
 File: menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 373--375
+Overfull \hbox (5.0pt too wide) in paragraph at lines 400--402
  [] 
  []
 
-[32 <./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37 <./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a174a0a1f80f038330573c11affcf0190_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf, id=1032, 445.665pt x 
+<menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf, id=1075, 445.665pt x 
 343.2825pt>
 File: menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 392--394
+Overfull \hbox (5.0pt too wide) in paragraph at lines 422--424
  [] 
  []
 
-[33 <./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./menu__1_8c_a8ec8f6d1dab90ec505790fd5b0f69cb1_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__1_8c_a174a0a1f80f038330573c11affcf0190_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__1_8c_a174a0a1f80f038330573c11affcf0190_icgraph.pdf, id=1046, 421.575pt x
+<menu__1_8c_a174a0a1f80f038330573c11affcf0190_icgraph.pdf, id=1088, 421.575pt x
  383.4325pt>
 File: menu__1_8c_a174a0a1f80f038330573c11affcf0190_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__1_8c_a174a0a1f80f038330573c11affcf0190_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 404--406
+Overfull \hbox (5.0pt too wide) in paragraph at lines 433--435
  [] 
  []
 
-[34 <./menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf>])
-(./menu__2_8c.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./menu__1_8c_a174a0a1f80f038330573c11affcf0190_cgraph.pdf>]) (./menu__2_8
+c.tex
 
 pdfTeX warning: pdflatex (file ./menu__2_8c__incl.pdf): PDF inclusion: found PD
 F version <1.5>, but at most version <1.4> allowed
-<menu__2_8c__incl.pdf, id=1059, 258.9675pt x 160.6pt>
+<menu__2_8c__incl.pdf, id=1101, 258.9675pt x 160.6pt>
 File: menu__2_8c__incl.pdf Graphic file (type pdf)
 
-<use menu__2_8c__incl.pdf> [35 <./menu__1_8c_a174a0a1f80f038330573c11affcf0190_
-icgraph.pdf>]
+<use menu__2_8c__incl.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./menu__1_8c_a174a0a1f80f038330573c11affcf0190_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__2_8c__dep__incl.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<menu__2_8c__dep__incl.pdf, id=1072, 138.5175pt x 160.6pt>
+<menu__2_8c__dep__incl.pdf, id=1114, 138.5175pt x 160.6pt>
 File: menu__2_8c__dep__incl.pdf Graphic file (type pdf)
 
 <use menu__2_8c__dep__incl.pdf>
@@ -1536,23 +1582,23 @@ pdfTeX warning: pdflatex (file ./menu__2_8c_ace070da1b289474491d279db0e38c002_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf, id=1079, 240.9pt x 10
+<menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf, id=1121, 240.9pt x 10
 2.3825pt>
 File: menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf Graphic file (typ
 e pdf)
  <use menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf>
-[36 <./menu__2_8c__incl.pdf> <./menu__2_8c__dep__incl.pdf>]
+[41 <./menu__2_8c__incl.pdf> <./menu__2_8c__dep__incl.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__2_8c_ace070da1b289474491d279db0e38c002_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__2_8c_ace070da1b289474491d279db0e38c002_icgraph.pdf, id=1105, 419.5675pt 
+<menu__2_8c_ace070da1b289474491d279db0e38c002_icgraph.pdf, id=1147, 419.5675pt 
 x 102.3825pt>
 File: menu__2_8c_ace070da1b289474491d279db0e38c002_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__2_8c_ace070da1b289474491d279db0e38c002_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 64--66
+Overfull \hbox (5.0pt too wide) in paragraph at lines 65--67
  [] 
  []
 
@@ -1562,12 +1608,12 @@ pdfTeX warning: pdflatex (file ./menu__2_8c_acad567327a0eeb986a5507ee5cf0cabc_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__2_8c_acad567327a0eeb986a5507ee5cf0cabc_icgraph.pdf, id=1107, 419.5675pt 
+<menu__2_8c_acad567327a0eeb986a5507ee5cf0cabc_icgraph.pdf, id=1149, 419.5675pt 
 x 102.3825pt>
 File: menu__2_8c_acad567327a0eeb986a5507ee5cf0cabc_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__2_8c_acad567327a0eeb986a5507ee5cf0cabc_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 83--85
+Overfull \hbox (5.0pt too wide) in paragraph at lines 88--90
  [] 
  []
 
@@ -1577,46 +1623,51 @@ pdfTeX warning: pdflatex (file ./menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf, id=1109, 411.5375pt 
+<menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf, id=1151, 411.5375pt 
 x 102.3825pt>
 File: menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 102--104
+Overfull \hbox (5.0pt too wide) in paragraph at lines 111--113
  [] 
  []
 
-[37 <./menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf> <./menu__2_8c_a
-ce070da1b289474491d279db0e38c002_icgraph.pdf> <./menu__2_8c_acad567327a0eeb986a
-5507ee5cf0cabc_icgraph.pdf>]
 
-pdfTeX warning: pdflatex (file ./menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_c
+Underfull \vbox (badness 1067) has occurred while \output is active []
+
+ [42 <./menu__2_8c_ace070da1b289474491d279db0e38c002_cgraph.pdf> <./menu__2_8c_
+ace070da1b289474491d279db0e38c002_icgraph.pdf> <./menu__2_8c_acad567327a0eeb986
+a5507ee5cf0cabc_icgraph.pdf>]
+
+pdfTeX warning: pdflatex (file ./menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_cgraph.pdf, id=1136, 341.275pt x 
+<menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_cgraph.pdf, id=1178, 341.275pt x 
 222.8325pt>
-File: menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_cgraph.pdf Graphic file (typ
+File: menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_cgraph.pdf Graphic file (typ
 e pdf)
- <use menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_cgraph.pdf>
+ <use menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_cgraph.pdf>
 
-pdfTeX warning: pdflatex (file ./menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_i
+pdfTeX warning: pdflatex (file ./menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_icgraph.pdf, id=1138, 325.215pt x
+<menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_icgraph.pdf, id=1180, 325.215pt x
  102.3825pt>
-File: menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_icgraph.pdf Graphic file (ty
+File: menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_icgraph.pdf Graphic file (ty
 pe pdf)
- <use menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_icgraph.pdf>
-[38 <./menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf> <./menu__2_8c_
-ad8e32aca7851c4b951d721a328bdf90b_cgraph.pdf>]
+ <use menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_icgraph.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./menu__2_8c_a2d5e1977645a303541a11cfa7d6750c6_icgraph.pdf> <./menu__2_8c
+_ac8cdcb971406a244fd2267b3c84864e0_cgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_cgraph.pdf, id=1158, 252.945pt x 
+<menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_cgraph.pdf, id=1201, 252.945pt x 
 102.3825pt>
 File: menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_cgraph.pdf Graphic file (typ
 e pdf)
@@ -1626,12 +1677,12 @@ pdfTeX warning: pdflatex (file ./menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_icgraph.pdf, id=1160, 431.6125pt 
+<menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_icgraph.pdf, id=1203, 431.6125pt 
 x 102.3825pt>
 File: menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 164--166
+Overfull \hbox (5.0pt too wide) in paragraph at lines 180--182
  [] 
  []
 
@@ -1639,40 +1690,44 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 164--166
 
 pdfTeX warning: pdflatex (file ./menu__3_8c__incl.pdf): PDF inclusion: found PD
 F version <1.5>, but at most version <1.4> allowed
-<menu__3_8c__incl.pdf, id=1162, 138.5175pt x 160.6pt>
+<menu__3_8c__incl.pdf, id=1205, 138.5175pt x 160.6pt>
 File: menu__3_8c__incl.pdf Graphic file (type pdf)
 
-<use menu__3_8c__incl.pdf> [39 <./menu__2_8c_ad8e32aca7851c4b951d721a328bdf90b_
-icgraph.pdf> <./menu__2_8c_a84e73540c8ab4197c6459ebffe84990a_cgraph.pdf> <./men
-u__2_8c_a84e73540c8ab4197c6459ebffe84990a_icgraph.pdf>]
+<use menu__3_8c__incl.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./menu__2_8c_ac8cdcb971406a244fd2267b3c84864e0_icgraph.pdf> <./menu__2_8c
+_a84e73540c8ab4197c6459ebffe84990a_cgraph.pdf> <./menu__2_8c_a84e73540c8ab4197c
+6459ebffe84990a_icgraph.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__3_8c__dep__incl.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<menu__3_8c__dep__incl.pdf, id=1190, 138.5175pt x 160.6pt>
+<menu__3_8c__dep__incl.pdf, id=1232, 138.5175pt x 160.6pt>
 File: menu__3_8c__dep__incl.pdf Graphic file (type pdf)
 
-<use menu__3_8c__dep__incl.pdf>
+<use menu__3_8c__dep__incl.pdf> [45 <./menu__3_8c__incl.pdf> <./menu__3_8c__dep
+__incl.pdf>]
 
 pdfTeX warning: pdflatex (file ./menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf, id=1196, 421.575pt x
+<menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf, id=1261, 421.575pt x
  102.3825pt>
 File: menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 48--50
+Overfull \hbox (5.0pt too wide) in paragraph at lines 50--52
  [] 
  []
 
-[40 <./menu__3_8c__incl.pdf> <./menu__3_8c__dep__incl.pdf>]
+
 
 pdfTeX warning: pdflatex (file ./menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_cgraph.pdf, id=1221, 246.9225pt x
+<menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_cgraph.pdf, id=1263, 246.9225pt x
  102.3825pt>
 File: menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_cgraph.pdf Graphic file (typ
 e pdf)
@@ -1682,80 +1737,76 @@ pdfTeX warning: pdflatex (file ./menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_icgraph.pdf, id=1223, 425.59pt x 
+<menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_icgraph.pdf, id=1265, 425.59pt x 
 102.3825pt>
 File: menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__3_8c_aa9bbeff66f7c34f44ec73a3f402d4573_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 79--81
+Overfull \hbox (5.0pt too wide) in paragraph at lines 84--86
  [] 
  []
 
 
 
-pdfTeX warning: pdflatex (file ./menu__3_8c_ab00749400b381f4be170c76925557417_c
+pdfTeX warning: pdflatex (file ./menu__3_8c_abd121280c836d330ac8728914bff0d91_c
 graph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
 
-<menu__3_8c_ab00749400b381f4be170c76925557417_cgraph.pdf, id=1225, 337.26pt x 1
+<menu__3_8c_abd121280c836d330ac8728914bff0d91_cgraph.pdf, id=1267, 337.26pt x 1
 82.6825pt>
-File: menu__3_8c_ab00749400b381f4be170c76925557417_cgraph.pdf Graphic file (typ
+File: menu__3_8c_abd121280c836d330ac8728914bff0d91_cgraph.pdf Graphic file (typ
 e pdf)
- <use menu__3_8c_ab00749400b381f4be170c76925557417_cgraph.pdf>
-[41 <./menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf> <./menu__3_8c_
+ <use menu__3_8c_abd121280c836d330ac8728914bff0d91_cgraph.pdf>
+[46 <./menu__3_8c_a86d93b51a8d2bff3d5c6ae8c2106da5b_icgraph.pdf> <./menu__3_8c_
 aa9bbeff66f7c34f44ec73a3f402d4573_cgraph.pdf> <./menu__3_8c_aa9bbeff66f7c34f44e
 c73a3f402d4573_icgraph.pdf>]
 
-pdfTeX warning: pdflatex (file ./menu__3_8c_ab00749400b381f4be170c76925557417_i
+pdfTeX warning: pdflatex (file ./menu__3_8c_abd121280c836d330ac8728914bff0d91_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__3_8c_ab00749400b381f4be170c76925557417_icgraph.pdf, id=1252, 325.215pt x
+<menu__3_8c_abd121280c836d330ac8728914bff0d91_icgraph.pdf, id=1294, 325.215pt x
  102.3825pt>
-File: menu__3_8c_ab00749400b381f4be170c76925557417_icgraph.pdf Graphic file (ty
+File: menu__3_8c_abd121280c836d330ac8728914bff0d91_icgraph.pdf Graphic file (ty
 pe pdf)
- <use menu__3_8c_ab00749400b381f4be170c76925557417_icgraph.pdf>
+ <use menu__3_8c_abd121280c836d330ac8728914bff0d91_icgraph.pdf>
 
 pdfTeX warning: pdflatex (file ./menu__3_8c_aa515c89c6a67cba54c1355f32d9f9fea_i
 cgraph.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> 
 allowed
 
-<menu__3_8c_aa515c89c6a67cba54c1355f32d9f9fea_icgraph.pdf, id=1254, 427.5975pt 
+<menu__3_8c_aa515c89c6a67cba54c1355f32d9f9fea_icgraph.pdf, id=1296, 427.5975pt 
 x 102.3825pt>
 File: menu__3_8c_aa515c89c6a67cba54c1355f32d9f9fea_icgraph.pdf Graphic file (ty
 pe pdf)
  <use menu__3_8c_aa515c89c6a67cba54c1355f32d9f9fea_icgraph.pdf>
-Overfull \hbox (5.0pt too wide) in paragraph at lines 129--131
+Overfull \hbox (5.0pt too wide) in paragraph at lines 142--144
  [] 
  []
 
 )
 No file refman.ind.
-[42 <./menu__3_8c_ab00749400b381f4be170c76925557417_cgraph.pdf> <./menu__3_8c_a
-b00749400b381f4be170c76925557417_icgraph.pdf> <./menu__3_8c_aa515c89c6a67cba54c
-1355f32d9f9fea_icgraph.pdf>] (./refman.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[47 <./menu__3_8c_abd121280c836d330ac8728914bff0d91_cgraph.pdf> <./menu__3_8c_a
+bd121280c836d330ac8728914bff0d91_icgraph.pdf> <./menu__3_8c_aa515c89c6a67cba54c
+1355f32d9f9fea_icgraph.pdf>] (./refman.aux) ) 
 Here is how much of TeX's memory you used:
- 10327 strings out of 495061
- 155229 string characters out of 1182621
- 237133 words of memory out of 3000000
- 13013 multiletter control sequences out of 15000+50000
+ 10340 strings out of 495061
+ 155379 string characters out of 1182621
+ 238212 words of memory out of 3000000
+ 13018 multiletter control sequences out of 15000+50000
  53499 words of font info for 71 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  41i,13n,58p,348b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb><
-/usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf
--texlive/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texmf-texlive/fonts/
-type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (46 pages, 2060033 bytes).
+{/usr/share/texmf-texlive/fonts/en
+c/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-te
+xlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1
+/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uh
+vbo8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on refman.pdf (53 pages, 2068913 bytes).
 PDF statistics:
- 1352 PDF objects out of 1440 (max. 8388607)
- 215 named destinations out of 1000 (max. 500000)
- 960 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1399 PDF objects out of 1440 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 984 words of extra memory for PDF output out of 10000 (max. 10000000)
 

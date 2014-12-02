@@ -1,88 +1,91 @@
 \contentsline {chapter}{\numberline {1}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Index}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}\discretionary {-}{}{}Data \discretionary {-}{}{}Structures}{1}{section.1.1}
-\contentsline {chapter}{\numberline {2}\discretionary {-}{}{}File \discretionary {-}{}{}Index}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}\discretionary {-}{}{}File \discretionary {-}{}{}List}{2}{section.2.1}
-\contentsline {chapter}{\numberline {3}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Documentation}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}equipa \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{3}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{3}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}ativo}{3}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}derrotas}{3}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}empates}{3}{subsubsection.3.1.1.3}
-\contentsline {subsubsection}{\numberline {3.1.1.4}id}{3}{subsubsection.3.1.1.4}
-\contentsline {subsubsection}{\numberline {3.1.1.5}lista}{3}{subsubsection.3.1.1.5}
-\contentsline {subsubsection}{\numberline {3.1.1.6}nome}{3}{subsubsection.3.1.1.6}
-\contentsline {subsubsection}{\numberline {3.1.1.7}vitorias}{3}{subsubsection.3.1.1.7}
-\contentsline {section}{\numberline {3.2}jogador \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{4}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{4}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}{4}{subsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.1.2}ativo}{4}{subsubsection.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.1.3}eq}{4}{subsubsection.3.2.1.3}
-\contentsline {subsubsection}{\numberline {3.2.1.4}golos}{4}{subsubsection.3.2.1.4}
-\contentsline {subsubsection}{\numberline {3.2.1.5}idade}{4}{subsubsection.3.2.1.5}
-\contentsline {subsubsection}{\numberline {3.2.1.6}morada}{4}{subsubsection.3.2.1.6}
-\contentsline {subsubsection}{\numberline {3.2.1.7}nome}{4}{subsubsection.3.2.1.7}
-\contentsline {subsubsection}{\numberline {3.2.1.8}num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}{4}{subsubsection.3.2.1.8}
-\contentsline {subsubsection}{\numberline {3.2.1.9}pos}{4}{subsubsection.3.2.1.9}
-\contentsline {subsubsection}{\numberline {3.2.1.10}pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}{4}{subsubsection.3.2.1.10}
-\contentsline {subsubsection}{\numberline {3.2.1.11}telefone}{4}{subsubsection.3.2.1.11}
-\contentsline {section}{\numberline {3.3}resultado \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{5}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{5}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}ativo}{5}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}data}{5}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}{5}{subsubsection.3.3.1.3}
-\contentsline {subsubsection}{\numberline {3.3.1.4}equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}{5}{subsubsection.3.3.1.4}
-\contentsline {subsubsection}{\numberline {3.3.1.5}golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}{5}{subsubsection.3.3.1.5}
-\contentsline {subsubsection}{\numberline {3.3.1.6}golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}{5}{subsubsection.3.3.1.6}
-\contentsline {subsubsection}{\numberline {3.3.1.7}id}{5}{subsubsection.3.3.1.7}
-\contentsline {subsubsection}{\numberline {3.3.1.8}local}{5}{subsubsection.3.3.1.8}
-\contentsline {subsubsection}{\numberline {3.3.1.9}marcadores}{5}{subsubsection.3.3.1.9}
-\contentsline {subsubsection}{\numberline {3.3.1.10}marcados}{5}{subsubsection.3.3.1.10}
-\contentsline {chapter}{\numberline {4}\discretionary {-}{}{}File \discretionary {-}{}{}Documentation}{6}{chapter.4}
-\contentsline {section}{\numberline {4.1}afm.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{6}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}\discretionary {-}{}{}Define \discretionary {-}{}{}Documentation}{7}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}\discretionary {-}{}{}E}{7}{subsubsection.4.1.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.2}\discretionary {-}{}{}J}{7}{subsubsection.4.1.1.2}
-\contentsline {subsubsection}{\numberline {4.1.1.3}\discretionary {-}{}{}R}{7}{subsubsection.4.1.1.3}
-\contentsline {subsection}{\numberline {4.1.2}\discretionary {-}{}{}Typedef \discretionary {-}{}{}Documentation}{7}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}listaequip}{7}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}listajog}{7}{subsubsection.4.1.2.2}
-\contentsline {subsubsection}{\numberline {4.1.2.3}listaresult}{7}{subsubsection.4.1.2.3}
-\contentsline {subsection}{\numberline {4.1.3}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{7}{subsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.3.1}carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}{8}{subsubsection.4.1.3.1}
-\contentsline {subsubsection}{\numberline {4.1.3.2}init}{8}{subsubsection.4.1.3.2}
-\contentsline {subsubsection}{\numberline {4.1.3.3}main}{9}{subsubsection.4.1.3.3}
-\contentsline {subsubsection}{\numberline {4.1.3.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}{10}{subsubsection.4.1.3.4}
-\contentsline {subsubsection}{\numberline {4.1.3.5}menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}{11}{subsubsection.4.1.3.5}
-\contentsline {subsubsection}{\numberline {4.1.3.6}salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}{12}{subsubsection.4.1.3.6}
-\contentsline {subsection}{\numberline {4.1.4}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{12}{subsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.4.1}equip}{12}{subsubsection.4.1.4.1}
-\contentsline {subsubsection}{\numberline {4.1.4.2}jog}{12}{subsubsection.4.1.4.2}
-\contentsline {subsubsection}{\numberline {4.1.4.3}result}{12}{subsubsection.4.1.4.3}
-\contentsline {section}{\numberline {4.2}menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{13}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{14}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{14}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{16}{subsubsection.4.2.1.2}
-\contentsline {subsubsection}{\numberline {4.2.1.3}eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}{18}{subsubsection.4.2.1.3}
-\contentsline {subsubsection}{\numberline {4.2.1.4}inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{20}{subsubsection.4.2.1.4}
-\contentsline {subsubsection}{\numberline {4.2.1.5}inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{22}{subsubsection.4.2.1.5}
-\contentsline {subsubsection}{\numberline {4.2.1.6}listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{24}{subsubsection.4.2.1.6}
-\contentsline {subsubsection}{\numberline {4.2.1.7}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{25}{subsubsection.4.2.1.7}
-\contentsline {subsubsection}{\numberline {4.2.1.8}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}{26}{subsubsection.4.2.1.8}
-\contentsline {subsubsection}{\numberline {4.2.1.9}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}{27}{subsubsection.4.2.1.9}
-\contentsline {subsubsection}{\numberline {4.2.1.10}menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}{28}{subsubsection.4.2.1.10}
-\contentsline {subsubsection}{\numberline {4.2.1.11}registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}{30}{subsubsection.4.2.1.11}
-\contentsline {subsubsection}{\numberline {4.2.1.12}tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{32}{subsubsection.4.2.1.12}
-\contentsline {subsubsection}{\numberline {4.2.1.13}ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}{34}{subsubsection.4.2.1.13}
-\contentsline {section}{\numberline {4.3}menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{35}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{36}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{37}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {4.3.1.2}jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}{37}{subsubsection.4.3.1.2}
-\contentsline {subsubsection}{\numberline {4.3.1.3}jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}{38}{subsubsection.4.3.1.3}
-\contentsline {subsubsection}{\numberline {4.3.1.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}{38}{subsubsection.4.3.1.4}
-\contentsline {subsubsection}{\numberline {4.3.1.5}result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{39}{subsubsection.4.3.1.5}
-\contentsline {section}{\numberline {4.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{40}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{40}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}medgolos}{41}{subsubsection.4.4.1.1}
-\contentsline {subsubsection}{\numberline {4.4.1.2}medidades}{41}{subsubsection.4.4.1.2}
-\contentsline {subsubsection}{\numberline {4.4.1.3}menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}{42}{subsubsection.4.4.1.3}
-\contentsline {subsubsection}{\numberline {4.4.1.4}mmarcador}{42}{subsubsection.4.4.1.4}
+\contentsline {chapter}{\numberline {2}\discretionary {-}{}{}File \discretionary {-}{}{}Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}\discretionary {-}{}{}File \discretionary {-}{}{}List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}equipa \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{5}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}ativo}{5}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}derrotas}{5}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}empates}{5}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}id}{6}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.5}lista}{6}{subsubsection.3.1.2.5}
+\contentsline {subsubsection}{\numberline {3.1.2.6}nome}{6}{subsubsection.3.1.2.6}
+\contentsline {subsubsection}{\numberline {3.1.2.7}vitorias}{6}{subsubsection.3.1.2.7}
+\contentsline {section}{\numberline {3.2}jogador \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{7}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}ano\discretionary {-}{}{}\_\discretionary {-}{}{}entrada}{7}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}ativo}{7}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}eq}{7}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}golos}{7}{subsubsection.3.2.2.4}
+\contentsline {subsubsection}{\numberline {3.2.2.5}idade}{7}{subsubsection.3.2.2.5}
+\contentsline {subsubsection}{\numberline {3.2.2.6}morada}{7}{subsubsection.3.2.2.6}
+\contentsline {subsubsection}{\numberline {3.2.2.7}nome}{7}{subsubsection.3.2.2.7}
+\contentsline {subsubsection}{\numberline {3.2.2.8}num\discretionary {-}{}{}\_\discretionary {-}{}{}cc}{7}{subsubsection.3.2.2.8}
+\contentsline {subsubsection}{\numberline {3.2.2.9}pos}{7}{subsubsection.3.2.2.9}
+\contentsline {subsubsection}{\numberline {3.2.2.10}pos\discretionary {-}{}{}\_\discretionary {-}{}{}list}{7}{subsubsection.3.2.2.10}
+\contentsline {subsubsection}{\numberline {3.2.2.11}telefone}{8}{subsubsection.3.2.2.11}
+\contentsline {section}{\numberline {3.3}resultado \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}\discretionary {-}{}{}Field \discretionary {-}{}{}Documentation}{8}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}ativo}{8}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}data}{8}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}equipa\discretionary {-}{}{}\_\discretionary {-}{}{}a}{8}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}equipa\discretionary {-}{}{}\_\discretionary {-}{}{}b}{8}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}golos\discretionary {-}{}{}\_\discretionary {-}{}{}a}{9}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}golos\discretionary {-}{}{}\_\discretionary {-}{}{}b}{9}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}id}{9}{subsubsection.3.3.2.7}
+\contentsline {subsubsection}{\numberline {3.3.2.8}local}{9}{subsubsection.3.3.2.8}
+\contentsline {subsubsection}{\numberline {3.3.2.9}marcadores}{9}{subsubsection.3.3.2.9}
+\contentsline {subsubsection}{\numberline {3.3.2.10}marcados}{9}{subsubsection.3.3.2.10}
+\contentsline {chapter}{\numberline {4}\discretionary {-}{}{}File \discretionary {-}{}{}Documentation}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}afm.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}\discretionary {-}{}{}Define \discretionary {-}{}{}Documentation}{12}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}\discretionary {-}{}{}E}{12}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}\discretionary {-}{}{}J}{12}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}\discretionary {-}{}{}R}{12}{subsubsection.4.1.1.3}
+\contentsline {subsection}{\numberline {4.1.2}\discretionary {-}{}{}Typedef \discretionary {-}{}{}Documentation}{13}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}listaequip}{13}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}listajog}{13}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}listaresult}{13}{subsubsection.4.1.2.3}
+\contentsline {subsection}{\numberline {4.1.3}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{13}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}carrega\discretionary {-}{}{}\_\discretionary {-}{}{}dados}{13}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}init}{13}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}main}{14}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}4}{15}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}menu\discretionary {-}{}{}\_\discretionary {-}{}{}principal}{15}{subsubsection.4.1.3.5}
+\contentsline {subsubsection}{\numberline {4.1.3.6}salva\discretionary {-}{}{}\_\discretionary {-}{}{}dados}{17}{subsubsection.4.1.3.6}
+\contentsline {subsection}{\numberline {4.1.4}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{17}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}equip}{17}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}jog}{17}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}result}{17}{subsubsection.4.1.4.3}
+\contentsline {section}{\numberline {4.2}menu\discretionary {-}{}{}\_\discretionary {-}{}{}1.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{19}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}editar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{19}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}editar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{20}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}eq\discretionary {-}{}{}\_\discretionary {-}{}{}list}{22}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.1.4}inserir\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{24}{subsubsection.4.2.1.4}
+\contentsline {subsubsection}{\numberline {4.2.1.5}inserir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{26}{subsubsection.4.2.1.5}
+\contentsline {subsubsection}{\numberline {4.2.1.6}listar\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{28}{subsubsection.4.2.1.6}
+\contentsline {subsubsection}{\numberline {4.2.1.7}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{29}{subsubsection.4.2.1.7}
+\contentsline {subsubsection}{\numberline {4.2.1.8}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jog\discretionary {-}{}{}\_\discretionary {-}{}{}a}{30}{subsubsection.4.2.1.8}
+\contentsline {subsubsection}{\numberline {4.2.1.9}listar\discretionary {-}{}{}\_\discretionary {-}{}{}jogx}{31}{subsubsection.4.2.1.9}
+\contentsline {subsubsection}{\numberline {4.2.1.10}menu\discretionary {-}{}{}\_\discretionary {-}{}{}1}{32}{subsubsection.4.2.1.10}
+\contentsline {subsubsection}{\numberline {4.2.1.11}registar\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}{34}{subsubsection.4.2.1.11}
+\contentsline {subsubsection}{\numberline {4.2.1.12}tranferir\discretionary {-}{}{}\_\discretionary {-}{}{}jog}{36}{subsubsection.4.2.1.12}
+\contentsline {subsubsection}{\numberline {4.2.1.13}ver\discretionary {-}{}{}\_\discretionary {-}{}{}jogos}{38}{subsubsection.4.2.1.13}
+\contentsline {section}{\numberline {4.3}menu\discretionary {-}{}{}\_\discretionary {-}{}{}2.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{40}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{41}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}jog\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{41}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}jog\discretionary {-}{}{}\_\discretionary {-}{}{}idade}{42}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.3}jog\discretionary {-}{}{}\_\discretionary {-}{}{}pos}{42}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}2}{43}{subsubsection.4.3.1.4}
+\contentsline {subsubsection}{\numberline {4.3.1.5}result\discretionary {-}{}{}\_\discretionary {-}{}{}equip}{44}{subsubsection.4.3.1.5}
+\contentsline {section}{\numberline {4.4}menu\discretionary {-}{}{}\_\discretionary {-}{}{}3.\discretionary {-}{}{}c \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{45}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{45}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}medgolos}{46}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}medidades}{46}{subsubsection.4.4.1.2}
+\contentsline {subsubsection}{\numberline {4.4.1.3}menu\discretionary {-}{}{}\_\discretionary {-}{}{}3}{46}{subsubsection.4.4.1.3}
+\contentsline {subsubsection}{\numberline {4.4.1.4}mmarcador}{47}{subsubsection.4.4.1.4}
