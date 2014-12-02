@@ -1,11 +1,28 @@
-// Funcao menu_2()
-// Funcao que implementa as operacoes do Menu 2 (Listar/Pesquisar)
+// Projeto Modulo Temático LTIC 2014/15
+// AFM - Software gestão para Associação de Futebol do Montenegro
+// "menu_2"
+
+/* !
+* \ file menu_2.c
+* \ brief Projeto Modulo Temático LTIC 2014/15 "menu_2.c"
+* \ details "menu_2.c" que implementa as operações do Menu 2 e respetivas funções
+* \ author Nuno Rodrigues
+* \ date 01 dez 2014
+* \ bug sem erros detetados
+* \ version 0.1
+* \ copyright GNU Public License.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-// Funcao listar resultados por equipa
+// ! result_equip
+/* *
+* função que mostra no ecran todos os resultados para uma determinada equipa
+* \ param void
+* \ return int
+*/
 int result_equip(void)
 {
 
@@ -37,7 +54,12 @@ int result_equip(void)
 
 }
 
-// Funcao listar jogadores por equipa
+// ! jog_equip
+/* *
+* função que mostra no ecran todos os jogadores de uma determinada equipa
+* \ param void
+* \ return int
+*/
 int jog_equip(void)
 {
 
@@ -64,7 +86,12 @@ int jog_equip(void)
 
 }
 
-// Funcao listar jogadores por idade
+// ! jog_idade
+/* *
+* função que mostra no ecran todos os jogadores de uma determinada idade
+* \ param void
+* \ return int
+*/
 int jog_idade(void)
 {
 
@@ -92,7 +119,12 @@ int jog_idade(void)
 
 }
 
-// Funcao listar jogadores por posicao
+// ! jog_pos
+/* *
+* função que mostra no ecran todos os jogadores de uma determinada posicao
+* \ param void
+* \ return int
+*/
 int jog_pos(void)
 {
 
@@ -121,8 +153,13 @@ int jog_pos(void)
 
 }
 
-// Funcao menu_2
-int menu_2()
+// ! menu_2
+/* *
+* funcao que implementa as operações do "Menu 2" (Listar/Pesquisar)
+* \ param void
+* \ return int
+*/
+int menu_2(void)
 {
 
     int op;
@@ -164,3 +201,5 @@ int menu_2()
     	} while (op!=0);
 
 }
+
+// FIM de menu_2.c #############################################################
