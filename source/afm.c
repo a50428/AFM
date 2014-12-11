@@ -3,7 +3,7 @@
 // "afm.c"
 
 /* !
-* \ file menu_1.c
+* \ file afm.c
 * \ brief Projeto Modulo Temático LTIC 2014/15 "afm.c"
 * \ details "afm.c" Ficheiro principal do programa, implementa o menu principal, as estruturas de dados e a inicialização de variáveis
 * \ author Valter António

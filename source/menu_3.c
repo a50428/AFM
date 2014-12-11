@@ -1,6 +1,26 @@
+// Projeto Modulo Temático LTIC 2014/15
+// AFM - Software gestão para Associação de Futebol do Montenegro
+// "menu_3"
+
+/* !
+* \ file menu_3.c
+* \ brief Projeto Modulo Temático LTIC 2014/15 "menu_3.c"
+* \ details "menu_3.c" que implementa as operações do Menu 3 e respetivas funções
+* \ author Patrick Arsenio
+* \ date 01 dez 2014
+* \ bug sem erros detetados
+* \ version 0.1
+* \ copyright GNU Public License.
+*/
+
 #include <stdio.h>
 
-// função que calcula a media de golos por jogo
+// ! medgolos
+/* *
+* função que mostra no ecran a media de golos de todos os jogos realizados
+* \ param void
+* \ return int
+*/
 int medgolos (void)
 {
     int a,b,numgolos=0, numjogos=0,i,aux=0;
@@ -27,6 +47,12 @@ int medgolos (void)
 
 }
 
+// ! medidades
+/* *
+* função que mostra no ecran a media de idades de todos os jogadores
+* \ param void
+* \ return int
+*/
 int medidades (void)
 {
     int idades=0, numjogadores=0,i,equipa,b;
@@ -49,6 +75,13 @@ int medidades (void)
     getchar();
     getchar();
 }
+
+// ! mmarcador
+/* *
+* função que mostra no ecran os dez melhores marcadores
+* \ param void
+* \ return int
+*/
 
 int mmarcador (void)
 {
@@ -74,9 +107,13 @@ printf("\nQualquer tecla para continuar...\n");
     getchar();
 }
 
-
-// função menu_3
-int menu_3()
+// ! menu_3
+/* *
+* funcao que implementa as operações do "Menu 3" (Estatisticas)
+* \ param void
+* \ return int
+*/
+int menu_3(void)
 {
 	int op; // variavel de opção para o menu
 	//system("chcp 1252>null"); //CODEPAGE PT
@@ -113,3 +150,5 @@ int menu_3()
 
 
 }
+
+// FIM de menu_3.c #############################################################
